@@ -129,17 +129,21 @@
     </div>
   </section>
 
-  <!-- Product Showcase (Premium + 3D Can + Particles) - Fully Responsive -->
-  <section id="showcase" class="relative bg-[#050505] py-12 overflow-hidden">
+  <!-- Product Showcase (Premium + 3D Can + Particles) - Blue Gradient Background -->
+  <section id="showcase" class="relative py-12 overflow-hidden"
+    style="background: radial-gradient(circle at 50% 45%, #234f82 0%, #193e6b 30%, #102e55 60%, #0a1f3d 100%);">
     <!-- Particle Canvas Background -->
     <canvas id="particle-canvas" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
 
-    <!-- Soft ambient glow -->
+    <!-- Soft ambient glow - enhanced blue tones -->
     <div
-      class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none max-w-[70vw] max-h-[70vh]">
+      class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] pointer-events-none max-w-[70vw] max-h-[70vh]">
     </div>
     <div
-      class="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none max-w-[60vw] max-h-[60vh]">
+      class="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-cyan-500/15 rounded-full blur-[100px] pointer-events-none max-w-[60vw] max-h-[60vh]">
+    </div>
+    <div
+      class="absolute top-1/3 right-1/3 w-[300px] h-[300px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none max-w-[50vw] max-h-[50vh]">
     </div>
 
     <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 md:gap-16 items-center relative z-10">
@@ -148,7 +152,7 @@
         <div id="showcase-can" class="relative w-[280px] h-[400px] sm:w-[340px] sm:h-[480px] md:w-[400px] md:h-[500px]">
           <!-- Glow ring behind can -->
           <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div class="w-48 h-48 sm:w-64 sm:h-64 bg-blue-500/5 rounded-full blur-2xl"></div>
+            <div class="w-48 h-48 sm:w-64 sm:h-64 bg-blue-400/10 rounded-full blur-2xl"></div>
           </div>
           <div id="can-3d" class="w-full h-full"></div>
         </div>
@@ -157,33 +161,33 @@
       <!-- RIGHT SIDE: Content -->
       <div class="space-y-6 sm:space-y-8 px-2 sm:px-0">
         <div>
-          <p class="text-blue-400 text-xs sm:text-sm font-medium tracking-widest uppercase mb-2 sm:mb-3">
+          <p class="text-blue-300 text-xs sm:text-sm font-medium tracking-widest uppercase mb-2 sm:mb-3">
             Premium Formula
           </p>
           <h2
             class="text-3xl sm:text-4xl md:text-5xl font-bungee font-extrabold allerta-stencil-regular text-white leading-tight">
             Energy That
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-white">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-cyan-200 to-blue-100">
               Never Quits
             </span>
           </h2>
         </div>
 
-        <p class="text-gray-400 text-sm sm:text-md leading-relaxed">
+        <p class="text-blue-200/70 text-sm sm:text-md leading-relaxed">
           A carefully balanced blend of high-quality ingredients designed to
           deliver clean, sustained energy without the crash.
         </p>
 
         <!-- Full width Instant Energy card -->
         <div
-          class="col-span-2 relative group rounded-2xl p-[1px] bg-gradient-to-b from-blue-400/40 via-white/15 to-white/5 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.5),0_4px_12px_rgba(0,0,0,0.3)] hover:shadow-[0_15px_40px_-5px_rgba(0,0,0,0.6),0_6px_20px_rgba(59,130,246,0.25)] transition-all duration-300 hover:-translate-y-1">
+          class="col-span-2 relative group rounded-2xl p-[1px] bg-gradient-to-b from-blue-400/40 via-blue-300/20 to-blue-500/10 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.5),0_4px_12px_rgba(0,0,0,0.3)] hover:shadow-[0_15px_40px_-5px_rgba(0,0,0,0.6),0_6px_20px_rgba(59,130,246,0.3)] transition-all duration-300 hover:-translate-y-1">
           <div
-            class="relative h-full rounded-[15px] overflow-hidden bg-gradient-to-br from-[#0f172a]/85 to-[#020617]/95 backdrop-blur-xl border border-white/10">
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/15 to-transparent"></div>
+            class="relative h-full rounded-[15px] overflow-hidden bg-gradient-to-br from-[#0f1f3a]/90 to-[#0a1525]/95 backdrop-blur-xl border border-blue-500/20">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/15 to-cyan-500/10"></div>
 
             <div class="relative z-10 p-3 sm:p-4 flex items-center gap-2 sm:gap-3">
               <div
-                class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-blue-500/20 border border-blue-400/40 flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_2px_6px_rgba(0,0,0,0.3)] flex-shrink-0">
+                class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-blue-500/30 border border-blue-400/50 flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_2px_6px_rgba(0,0,0,0.3)] flex-shrink-0">
                 <svg class="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 text-blue-300" fill="none" stroke="currentColor"
                   viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -194,14 +198,14 @@
                 <div class="text-white text-xs sm:text-sm font-medium">
                   Instant Energy
                 </div>
-                <div class="text-white/60 text-[10px] sm:text-xs">
+                <div class="text-blue-300/70 text-[10px] sm:text-xs">
                   Feel the spirit in seconds
                 </div>
               </div>
             </div>
 
             <div
-              class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-blue-300/50 to-transparent">
+              class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-blue-300/40 to-transparent">
             </div>
           </div>
         </div>
@@ -209,13 +213,13 @@
         <!-- Feature Grid -->
         <div class="grid grid-cols-2 gap-2 sm:gap-4">
           <!-- Card 1 -->
-          <div class="relative group rounded-xl p-[1px] bg-gradient-to-b from-white/20 to-white/5">
+          <div class="relative group rounded-xl p-[1px] bg-gradient-to-b from-blue-400/20 to-blue-500/10">
             <div
-              class="rounded-[10px] px-3 sm:px-4 py-2 sm:py-2.5 bg-[#0b1222]/75 backdrop-blur-2xl border border-white/10">
+              class="rounded-[10px] px-3 sm:px-4 py-2 sm:py-2.5 bg-[#0a1a30]/80 backdrop-blur-2xl border border-blue-500/15">
               <div class="text-blue-300 text-[11px] sm:text-[13px] font-medium">
                 Vitamin B
               </div>
-              <div class="text-white/50 text-[9px] sm:text-[10px] mt-0.5">
+              <div class="text-blue-300/50 text-[9px] sm:text-[10px] mt-0.5">
                 Energy metabolism
               </div>
             </div>
@@ -223,62 +227,62 @@
 
           <!-- Card 2 -->
           <div
-            class="relative group rounded-xl p-[1px] bg-gradient-to-b from-white/25 via-white/8 to-white/5 shadow-[0_8px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_12px_28px_rgba(59,130,246,0.18)] transition-all duration-300 hover:-translate-y-1">
+            class="relative group rounded-xl p-[1px] bg-gradient-to-b from-blue-400/25 via-blue-300/15 to-blue-500/10 shadow-[0_8px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_12px_28px_rgba(59,130,246,0.25)] transition-all duration-300 hover:-translate-y-1">
             <div
-              class="relative rounded-[10px] overflow-hidden bg-gradient-to-br from-[#0f172a]/80 to-[#020617]/90 backdrop-blur-2xl border border-white/10">
-              <div class="absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-transparent"></div>
+              class="relative rounded-[10px] overflow-hidden bg-gradient-to-br from-[#0a1a30]/85 to-[#061020]/90 backdrop-blur-2xl border border-blue-500/15">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent"></div>
 
               <div class="relative z-10 px-3 sm:px-4 py-2 sm:py-3">
                 <h4 class="text-blue-300 text-xs sm:text-sm font-semibold">Caffeine</h4>
-                <p class="text-white/55 text-[10px] sm:text-[11px] mt-0.5">
+                <p class="text-blue-300/55 text-[10px] sm:text-[11px] mt-0.5">
                   150mg clean focus
                 </p>
               </div>
 
               <div
-                class="absolute top-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent">
+                class="absolute top-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent">
               </div>
             </div>
           </div>
 
           <!-- Card 3 -->
           <div
-            class="relative group rounded-xl p-[1px] bg-gradient-to-b from-white/25 via-white/8 to-white/5 shadow-[0_8px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_12px_28px_rgba(59,130,246,0.18)] transition-all duration-300 hover:-translate-y-1">
+            class="relative group rounded-xl p-[1px] bg-gradient-to-b from-blue-400/25 via-blue-300/15 to-blue-500/10 shadow-[0_8px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_12px_28px_rgba(59,130,246,0.25)] transition-all duration-300 hover:-translate-y-1">
             <div
-              class="relative rounded-[10px] overflow-hidden bg-gradient-to-br from-[#0f172a]/80 to-[#020617]/90 backdrop-blur-2xl border border-white/10">
-              <div class="absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-transparent"></div>
+              class="relative rounded-[10px] overflow-hidden bg-gradient-to-br from-[#0a1a30]/85 to-[#061020]/90 backdrop-blur-2xl border border-blue-500/15">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent"></div>
 
               <div class="relative z-10 px-3 sm:px-4 py-2 sm:py-3">
                 <h4 class="text-blue-300 text-xs sm:text-sm font-semibold">Taurine</h4>
-                <p class="text-white/55 text-[10px] sm:text-[11px] mt-0.5">
+                <p class="text-blue-300/55 text-[10px] sm:text-[11px] mt-0.5">
                   Boosts endurance
                 </p>
               </div>
 
               <div
-                class="absolute top-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent">
+                class="absolute top-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent">
               </div>
             </div>
           </div>
 
           <!-- Card 4 -->
           <div
-            class="relative group rounded-xl p-[1px] bg-gradient-to-b from-white/25 via-white/8 to-white/5 shadow-[0_8px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_12px_28px_rgba(59,130,246,0.18)] transition-all duration-300 hover:-translate-y-1">
+            class="relative group rounded-xl p-[1px] bg-gradient-to-b from-blue-400/25 via-blue-300/15 to-blue-500/10 shadow-[0_8px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_12px_28px_rgba(59,130,246,0.25)] transition-all duration-300 hover:-translate-y-1">
             <div
-              class="relative rounded-[10px] overflow-hidden bg-gradient-to-br from-[#0f172a]/80 to-[#020617]/90 backdrop-blur-2xl border border-white/10">
-              <div class="absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-transparent"></div>
+              class="relative rounded-[10px] overflow-hidden bg-gradient-to-br from-[#0a1a30]/85 to-[#061020]/90 backdrop-blur-2xl border border-blue-500/15">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent"></div>
 
               <div class="relative z-10 px-3 sm:px-4 py-2 sm:py-3">
                 <h4 class="text-blue-300 text-xs sm:text-sm font-semibold">
                   Refreshing
                 </h4>
-                <p class="text-white/55 text-[10px] sm:text-[11px] mt-0.5">
+                <p class="text-blue-300/55 text-[10px] sm:text-[11px] mt-0.5">
                   Crisp smooth taste
                 </p>
               </div>
 
               <div
-                class="absolute top-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent">
+                class="absolute top-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent">
               </div>
             </div>
           </div>
@@ -289,12 +293,12 @@
 
   <!-- Three.js Import Map -->
   <script type="importmap">
-  {
-    "imports": {
-      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-    }
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
   }
+}
 </script>
 
   <!-- Three.js 3D Can Script -->
@@ -332,7 +336,7 @@
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       renderer.setClearColor(0x000000, 0);
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure = 1.15;
+      renderer.toneMappingExposure = 1.5;
       renderer.shadowMap.enabled = true;
       renderer.shadowMap.type = THREE.PCFSoftShadowMap;
       container.appendChild(renderer.domElement);
@@ -345,10 +349,10 @@
       controls.autoRotate = true;
       controls.autoRotateSpeed = 1.2;
 
-      // Lights
-      scene.add(new THREE.AmbientLight(0xffffff, 0.4));
+      // ===== LIGHTS =====
+      scene.add(new THREE.AmbientLight(0x88aaff, 0.8));
 
-      const keyLight = new THREE.DirectionalLight(0xfff5e6, 2.2);
+      const keyLight = new THREE.DirectionalLight(0xfff5e6, 3.0);
       keyLight.position.set(4, 6, 5);
       keyLight.castShadow = true;
       keyLight.shadow.mapSize.width = 1024;
@@ -356,22 +360,26 @@
       keyLight.shadow.bias = -0.001;
       scene.add(keyLight);
 
-      const fillLight = new THREE.DirectionalLight(0x88aaff, 0.8);
+      const fillLight = new THREE.DirectionalLight(0x6699ff, 1.8);
       fillLight.position.set(-4, 1, 3);
       scene.add(fillLight);
 
-      const rimLight = new THREE.DirectionalLight(0x4488ff, 1.0);
+      const rimLight = new THREE.DirectionalLight(0x4488ff, 1.5);
       rimLight.position.set(0, 2, -6);
       scene.add(rimLight);
 
-      const bottomLight = new THREE.DirectionalLight(0x4466aa, 0.3);
+      const bottomLight = new THREE.DirectionalLight(0x4466aa, 0.8);
       bottomLight.position.set(0, -3, 2);
       scene.add(bottomLight);
+
+      const frontLight = new THREE.DirectionalLight(0xaaccff, 1.2);
+      frontLight.position.set(0, 0, 5);
+      scene.add(frontLight);
 
       // Ground plane
       const groundGeometry = new THREE.PlaneGeometry(3, 3);
       const groundMaterial = new THREE.ShadowMaterial({
-        opacity: 0.4,
+        opacity: 0.3,
         color: 0x000000,
         blending: THREE.MultiplyBlending,
         depthWrite: false,
@@ -389,58 +397,116 @@
       can.position.y = 0.1;
       scene.add(can);
 
-      const polishedSilver = new THREE.MeshStandardMaterial({
-        color: 0xd0d8e4,
-        metalness: 0.97,
-        roughness: 0.09,
+      // ===== SILVER MATERIALS =====
+      // Bright polished silver for top lid
+      const lidSilver = new THREE.MeshStandardMaterial({
+        color: 0xe8ecf0,
+        metalness: 0.98,
+        roughness: 0.06,
+        emissive: 0x224466,
+        emissiveIntensity: 0.03,
       });
 
-      const darkSilver = new THREE.MeshStandardMaterial({
-        color: 0x7a8a9a,
+      // Medium silver for rim
+      const rimSilver = new THREE.MeshStandardMaterial({
+        color: 0xd0d8e0,
+        metalness: 0.95,
+        roughness: 0.08,
+        emissive: 0x224466,
+        emissiveIntensity: 0.03,
+      });
+
+      // Darker silver for bottom
+      const bottomSilver = new THREE.MeshStandardMaterial({
+        color: 0x8a9aaa,
         metalness: 0.9,
-        roughness: 0.22,
+        roughness: 0.15,
+        emissive: 0x112244,
+        emissiveIntensity: 0.02,
       });
 
+      // ===== BODY (Blue/Can body) =====
+      const bodyMat = new THREE.MeshStandardMaterial({
+        color: 0x1a3a6a,
+        metalness: 0.6,
+        roughness: 0.25,
+        emissive: 0x2244aa,
+        emissiveIntensity: 0.08,
+      });
       const body = new THREE.Mesh(
         new THREE.CylinderGeometry(0.72, 0.72, 2.55, 64),
-        new THREE.MeshStandardMaterial({
-          color: 0x0a1a3a,
-          metalness: 0.7,
-          roughness: 0.3,
-        }),
+        bodyMat,
       );
       body.castShadow = true;
       body.receiveShadow = true;
       can.add(body);
 
-      const topRim = new THREE.Mesh(
-        new THREE.CylinderGeometry(0.75, 0.75, 0.075, 64),
-        polishedSilver,
-      );
-      topRim.position.y = 1.31;
-      topRim.castShadow = true;
-      can.add(topRim);
-
+      // ===== TOP LID (Silver) =====
+      // Main top lid surface
       const topLid = new THREE.Mesh(
-        new THREE.CylinderGeometry(0.68, 0.68, 0.055, 64),
-        polishedSilver,
+        new THREE.CylinderGeometry(0.62, 0.62, 0.04, 64),
+        lidSilver,
       );
       topLid.position.y = 1.36;
       topLid.castShadow = true;
       can.add(topLid);
 
+      // Lid edge/rim (raised ring around the lid)
+      const lidEdge = new THREE.Mesh(
+        new THREE.TorusGeometry(0.62, 0.025, 16, 64),
+        rimSilver,
+      );
+      lidEdge.position.y = 1.38;
+      lidEdge.rotation.x = Math.PI / 2;
+      lidEdge.castShadow = true;
+      can.add(lidEdge);
+
+      // Inner lid ring (decorative)
+      const innerLidRing = new THREE.Mesh(
+        new THREE.TorusGeometry(0.50, 0.015, 16, 48),
+        rimSilver,
+      );
+      innerLidRing.position.y = 1.365;
+      innerLidRing.rotation.x = Math.PI / 2;
+      can.add(innerLidRing);
+
+      // ===== TOP RIM (Silver ring around the can top) =====
+      const topRim = new THREE.Mesh(
+        new THREE.TorusGeometry(0.72, 0.04, 16, 64),
+        rimSilver,
+      );
+      topRim.position.y = 1.31;
+      topRim.rotation.x = Math.PI / 2;
+      topRim.castShadow = true;
+      can.add(topRim);
+
+      // ===== BOTTOM (Silver) =====
+      // Bottom base
       const bottom = new THREE.Mesh(
-        new THREE.CylinderGeometry(0.7, 0.72, 0.1, 64),
-        darkSilver,
+        new THREE.CylinderGeometry(0.68, 0.72, 0.08, 64),
+        bottomSilver,
       );
       bottom.position.y = -1.325;
       bottom.castShadow = true;
       can.add(bottom);
 
+      // Bottom rim/edge
+      const bottomRim = new THREE.Mesh(
+        new THREE.TorusGeometry(0.70, 0.025, 16, 64),
+        bottomSilver,
+      );
+      bottomRim.position.y = -1.28;
+      bottomRim.rotation.x = Math.PI / 2;
+      bottomRim.castShadow = true;
+      can.add(bottomRim);
+
+      // ===== DECORATIVE RINGS (Middle of can) =====
       const ringMat = new THREE.MeshStandardMaterial({
         color: 0x99aabb,
         metalness: 0.85,
-        roughness: 0.2,
+        roughness: 0.15,
+        emissive: 0x224488,
+        emissiveIntensity: 0.05,
       });
 
       const ring1 = new THREE.Mesh(
@@ -459,6 +525,7 @@
       ring2.rotation.x = Math.PI / 2;
       can.add(ring2);
 
+      // ===== LABEL WITH IMAGE =====
       const textureLoader = new THREE.TextureLoader();
 
       textureLoader.load(
@@ -474,9 +541,11 @@
 
           const labelMat = new THREE.MeshStandardMaterial({
             map: texture,
-            metalness: 0.25,
-            roughness: 0.35,
+            metalness: 0.2,
+            roughness: 0.3,
             side: THREE.FrontSide,
+            emissive: 0x2244aa,
+            emissiveIntensity: 0.05,
           });
 
           const label = new THREE.Mesh(
@@ -501,29 +570,61 @@
         const ctx = canvas.getContext("2d");
 
         const grad = ctx.createLinearGradient(0, 0, 0, 1024);
-        grad.addColorStop(0, "#0a1a3a");
-        grad.addColorStop(0.5, "#1a3a6a");
-        grad.addColorStop(1, "#0a1a3a");
+        grad.addColorStop(0, "#1a3a7a");
+        grad.addColorStop(0.3, "#2a5a9a");
+        grad.addColorStop(0.5, "#3a6aaa");
+        grad.addColorStop(0.7, "#2a5a9a");
+        grad.addColorStop(1, "#1a3a7a");
         ctx.fillStyle = grad;
         ctx.fillRect(0, 0, 512, 1024);
 
-        ctx.fillStyle = "#e8f0ff";
+        ctx.shadowColor = 'rgba(100, 150, 255, 0.3)';
+        ctx.shadowBlur = 20;
+        ctx.fillStyle = "#ffffff";
         ctx.textAlign = "center";
         ctx.font = "bold 80px Arial";
         ctx.fillText("FAST", 256, 400);
+        ctx.fillStyle = "#aaccee";
         ctx.font = "bold 70px Arial";
         ctx.fillText("TRACK", 256, 500);
-        ctx.fillStyle = "#88aadd";
+        ctx.fillStyle = "#88bbdd";
         ctx.font = "40px Arial";
         ctx.fillText("PREMIUM", 256, 590);
+        ctx.shadowBlur = 0;
+
+        ctx.fillStyle = "#66aaff";
+        ctx.shadowColor = 'rgba(100, 150, 255, 0.5)';
+        ctx.shadowBlur = 30;
+        ctx.beginPath();
+        ctx.moveTo(240, 680);
+        ctx.lineTo(260, 680);
+        ctx.lineTo(250, 720);
+        ctx.lineTo(270, 720);
+        ctx.lineTo(230, 790);
+        ctx.lineTo(245, 740);
+        ctx.lineTo(225, 740);
+        ctx.closePath();
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        const shineGrad = ctx.createLinearGradient(0, 0, 512, 0);
+        shineGrad.addColorStop(0, 'rgba(255,255,255,0)');
+        shineGrad.addColorStop(0.4, 'rgba(255,255,255,0.05)');
+        shineGrad.addColorStop(0.5, 'rgba(255,255,255,0.08)');
+        shineGrad.addColorStop(0.6, 'rgba(255,255,255,0.05)');
+        shineGrad.addColorStop(1, 'rgba(255,255,255,0)');
+        ctx.fillStyle = shineGrad;
+        ctx.fillRect(0, 0, 512, 1024);
 
         const texture = new THREE.CanvasTexture(canvas);
         texture.colorSpace = THREE.SRGBColorSpace;
 
         const labelMat = new THREE.MeshStandardMaterial({
           map: texture,
-          metalness: 0.25,
-          roughness: 0.35,
+          metalness: 0.2,
+          roughness: 0.3,
+          emissive: 0x2244aa,
+          emissiveIntensity: 0.05,
         });
 
         const label = new THREE.Mesh(
@@ -534,11 +635,12 @@
         can.add(label);
       }
 
+      // ===== SHADOWS =====
       const shadowGeometry = new THREE.CircleGeometry(0.9, 32);
       const shadowMaterial = new THREE.MeshBasicMaterial({
         color: 0x000000,
         transparent: true,
-        opacity: 0.25,
+        opacity: 0.2,
         depthWrite: false,
         side: THREE.DoubleSide,
       });
@@ -551,7 +653,7 @@
       const softShadowMaterial = new THREE.MeshBasicMaterial({
         color: 0x000000,
         transparent: true,
-        opacity: 0.1,
+        opacity: 0.08,
         depthWrite: false,
         side: THREE.DoubleSide,
       });
