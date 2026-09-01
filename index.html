@@ -1,165 +1,198 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-    <title>FAST TRACK · Premium Energy</title>
-    <!-- Tailwind via CDN (lightweight) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- GSAP + ScrollTrigger + Lenis + SplitType -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
-    <script src="https://unpkg.com/split-type@0.3.4/umd/split-type.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Londrina+Shadow&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Three.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>FAST TRACK</title>
+  <!-- Tailwind via CDN (lightweight) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+    rel="stylesheet" />
+  <!-- GSAP + ScrollTrigger + Lenis + SplitType -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/split-type@0.3.4/umd/split-type.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Londrina+Shadow&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-      <div class="logo">
-        FAST<span
-          style="
-            font-weight: 300;
-            background: none;
-            -webkit-background-clip: unset;
-            background-clip: unset;
-            color: #aab;
-          "
-          >TRACK</span
-        >
-      </div>
-      <ul class="nav-links">
-        <li>Product</li>
-        <li>Distributors</li>
-        <li>Careers</li>
-      </ul>
-    </nav>
+  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet" />
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
 
-    <!-- Navigation -->
-    <nav id="navbar">
-      <a href="#hero" class="logo">
-        FAST<span
-          style="
-            font-weight: 300;
-            background: none;
-            -webkit-background-clip: unset;
-            background-clip: unset;
-            color: #aab;
-          "
-          >TRACK</span
-        >
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 pt-2">
+    <nav id="navbar" class="mx-auto max-w-7xl flex items-center justify-between
+         px-4 sm:px-6 py-2.5
+         rounded-2xl
+         border border-blue-400/20
+         bg-blue-400/15
+         backdrop-blur-xl
+         shadow-[0_10px_40px_rgba(0,0,0,0.15)]
+         transition-all duration-300">
+
+
+      <!-- Logo - Increased size -->
+      <a href="#hero" class="flex items-center shrink-0
+           transition-transform duration-300 hover:scale-105">
+        <img src="/logo.jpeg" alt="FASTTRACK" class="h-10 sm:h-11 lg:h-12 w-auto object-contain block" />
       </a>
 
-      <!-- Desktop Navigation Links -->
-      <ul class="nav-links">
-        <li><a href="#showcase">Product</a></li>
-        <li><a href="#distributor">Distributors</a></li>
-        <li><a href="#distributor">Careers</a></li>
+      <!-- Desktop Navigation -->
+      <ul class="nav-links hidden md:flex items-center gap-1
+           rounded-xl border border-white/5
+           bg-white/[0.03] p-1">
+        <li>
+          <a href="#showcase" class="mobile-link group relative block rounded-lg
+               px-4 lg:px-5 py-1.5
+               text-sm font-medium text-gray-300
+               transition-all duration-300
+               hover:bg-white/[0.07] hover:text-white">
+            Product
+          </a>
+        </li>
+
+        <li>
+          <a href="#distributor" class="mobile-link group relative block rounded-lg
+               px-4 lg:px-5 py-1.5
+               text-sm font-medium text-gray-300
+               transition-all duration-300
+               hover:bg-white/[0.07] hover:text-white">
+            Distributors
+          </a>
+        </li>
+
+        <li>
+          <a href="#careers" class="mobile-link group relative block rounded-lg
+               px-4 lg:px-5 py-1.5
+               text-sm font-medium text-gray-300
+               transition-all duration-300
+               hover:bg-white/[0.07] hover:text-white">
+            Careers
+          </a>
+        </li>
       </ul>
 
-      <!-- Hamburger Menu Button -->
-      <button id="hamburger-btn" class="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <!-- Desktop CTA -->
+      <a href="#contact" class="hidden md:inline-flex items-center gap-2
+           rounded-xl
+           border border-cyan-400/30
+           bg-cyan-400/10
+           px-4 py-1.5
+           text-sm font-semibold
+           text-cyan-300
+           transition-all duration-300
+           hover:bg-cyan-400/20
+           hover:text-white">
+        Get Started
+
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-6-6 6 6-6 6" />
+        </svg>
+      </a>
+
+      <!-- Mobile Hamburger -->
+      <button id="hamburger-btn" type="button" aria-label="Toggle menu" class="md:hidden flex flex-col items-center justify-center
+           gap-1.5 w-9 h-9
+           rounded-xl
+           border border-white/10
+           bg-white/[0.05]
+           transition-all duration-300
+           hover:bg-white/10">
+        <span class="hamburger-line h-[2px] w-5 rounded-full bg-white"></span>
+        <span class="hamburger-line h-[2px] w-5 rounded-full bg-white"></span>
+        <span class="hamburger-line h-[2px] w-5 rounded-full bg-white"></span>
       </button>
+
     </nav>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="mobile-menu">
-      <div class="mobile-menu-content">
-        <!-- Close Button -->
-        <button id="close-menu" class="close-menu" aria-label="Close menu">
-          <svg viewBox="0 0 24 24" width="24" height="24">
-            <path
-              stroke="currentColor"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
+    <!-- Mobile Menu - Fixed overlapping issue -->
+    <div id="mobile-menu" class="hidden mx-auto mt-2 max-w-7xl
+         rounded-2xl
+         border border-white/10
+         bg-[#07111f]/95
+         backdrop-blur-xl
+         shadow-[0_15px_50px_rgba(0,0,0,0.45)]
+         p-3
+         overflow-y-auto
+         max-h-[80vh]">
+      <div class="flex flex-col gap-1">
 
-        <!-- Mobile Logo -->
-        <a href="#hero" class="mobile-logo">
-          FAST<span
-            style="
-              font-weight: 300;
-              background: none;
-              -webkit-background-clip: unset;
-              background-clip: unset;
-              color: #aab;
-            "
-            >TRACK</span
-          >
+        <a href="#showcase" class="mobile-link rounded-xl px-4 py-2.5
+             text-sm font-medium text-gray-300
+             transition-all duration-300
+             hover:bg-white/[0.06] hover:text-white">
+          Product
         </a>
 
-        <!-- Mobile Navigation Links -->
-        <ul class="mobile-nav-links">
-          <li><a href="#showcase" class="mobile-link">Product</a></li>
-          <li><a href="#distributor" class="mobile-link">Distributors</a></li>
-          <li><a href="#distributor" class="mobile-link">Careers</a></li>
-        </ul>
+        <a href="#distributor" class="mobile-link rounded-xl px-4 py-2.5
+             text-sm font-medium text-gray-300
+             transition-all duration-300
+             hover:bg-white/[0.06] hover:text-white">
+          Distributors
+        </a>
+
+        <a href="#careers" class="mobile-link rounded-xl px-4 py-2.5
+             text-sm font-medium text-gray-300
+             transition-all duration-300
+             hover:bg-white/[0.06] hover:text-white">
+          Careers
+        </a>
+
+        <div class="my-2 h-px bg-white/10"></div>
+
+        <a href="#contact" class="flex items-center justify-center gap-2
+             rounded-xl
+             bg-cyan-400
+             px-4 py-3
+             text-sm font-semibold
+             text-[#04101d]
+             transition-all duration-300
+             hover:bg-cyan-300">
+          Get Started
+
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-6-6 6 6-6 6" />
+          </svg>
+        </a>
+
       </div>
     </div>
+  </header>
 
-    <!-- Hero Section – fully responsive for all screen types -->
-    <section
-      id="hero"
-      class="relative h-screen w-full overflow-hidden bg-black"
-    >
-      <!-- Fullscreen Background Video -->
-      <video
-        class="absolute inset-0 w-full h-full object-cover"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-      >
-        <source src="/banner3.png.mp4" type="video/mp4" />
-      </video>
 
-      <!-- Soft Dark Vignette -->
-      <div class="absolute inset-0 bg-black/20"></div>
+  <!-- Hero Section -->
+  <section id="hero" class="relative h-screen w-full overflow-hidden bg-black">
+    <!-- Fullscreen Background Video -->
+    <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="auto">
+      <source src="/banner3.png.mp4" type="video/mp4" />
+    </video>
 
-      <!-- Bottom Glow – responsive with clamp() and dynamic sizing -->
-      <div
-        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[min(900px,100vw)] h-[clamp(3rem,11vh,11rem)] bg-blue-500/20 blur-[120px] rounded-full md:w-[900px] md:h-44 sm:w-[90vw] sm:h-32 max-w-[900px]"
-      ></div>
-    </section>
+    <!-- Soft Dark Vignette -->
+    <div class="absolute inset-0 bg-black/20"></div>
 
-    <!-- Product Showcase (Premium + 3D Can + Particles) - Blue Gradient Background -->
-    <section
-      id="showcase"
-      class="relative py-12 overflow-hidden"
-      style="
+    <!-- Bottom Glow – responsive with clamp() and dynamic sizing -->
+    <div
+      class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[min(900px,100vw)] h-[clamp(3rem,11vh,11rem)] bg-blue-500/20 blur-[120px] rounded-full md:w-[900px] md:h-44 sm:w-[90vw] sm:h-32 max-w-[900px]">
+    </div>
+  </section>
+
+  <!-- Product Showcase (Premium + 3D Can + Particles) - Blue Gradient Background -->
+  <section id="showcase" class="relative py-12 overflow-hidden" style="
         background: radial-gradient(
           circle at 50% 45%,
           #234f82 0%,
@@ -167,1766 +200,1510 @@
           #102e55 60%,
           #0a1f3d 100%
         );
-      "
-    >
-      <!-- Particle Canvas Background -->
-      <canvas
-        id="particle-canvas"
-        class="absolute inset-0 w-full h-full pointer-events-none"
-      ></canvas>
+      ">
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
 
-      <!-- Soft ambient glow - enhanced blue tones -->
-      <div
-        class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] pointer-events-none max-w-[70vw] max-h-[70vh]"
-      ></div>
-      <div
-        class="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-cyan-500/15 rounded-full blur-[100px] pointer-events-none max-w-[60vw] max-h-[60vh]"
-      ></div>
-      <div
-        class="absolute top-1/3 right-1/3 w-[300px] h-[300px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none max-w-[50vw] max-h-[50vh]"
-      ></div>
+    <!-- Soft ambient glow - enhanced blue tones -->
+    <div
+      class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] pointer-events-none max-w-[70vw] max-h-[70vh]">
+    </div>
+    <div
+      class="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-cyan-500/15 rounded-full blur-[100px] pointer-events-none max-w-[60vw] max-h-[60vh]">
+    </div>
+    <div
+      class="absolute top-1/3 right-1/3 w-[300px] h-[300px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none max-w-[50vw] max-h-[50vh]">
+    </div>
 
-      <div
-        class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 md:gap-16 items-center relative z-10"
-      >
-        <!-- LEFT SIDE: 3D Can -->
-        <div class="flex justify-center items-center px-2 sm:px-4">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 md:gap-16 items-center relative z-10">
+      <!-- LEFT SIDE: Continuous Showcase Video -->
+      <div class="flex justify-center items-center px-2 sm:px-4">
+        <div id="showcase-video"
+          class="relative w-full max-w-[520px] h-[320px] sm:h-[400px] md:h-[500px]
+         rounded-3xl overflow-hidden
+         bg-white/10 backdrop-blur-xl
+         shadow-[0_0_50px_rgba(255,255,255,0.45),0_0_100px_rgba(255,255,255,0.3),0_0_150px_rgba(255,255,255,0.15)]
+         transition-all duration-500
+         hover:-translate-y-2
+         hover:shadow-[0_0_70px_rgba(255,255,255,0.7),0_0_140px_rgba(255,255,255,0.45),0_0_220px_rgba(255,255,255,0.25)]">
+
+
+          <!-- Soft glow behind video -->
+          <div class="absolute inset-0 rounded-2xl bg-blue-500/10 blur-2xl scale-95 pointer-events-none"></div>
+
+          <video class="relative z-10 w-full h-full object-cover" autoplay muted loop playsinline preload="auto"
+            disablepictureinpicture controlslist="nodownload noplaybackrate nofullscreen"
+            aria-label="Premium product showcase video">
+            <source src="/fast.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE: Content -->
+      <div class="space-y-6 sm:space-y-8 px-2 sm:px-0">
+        <div>
+          <p class="text-blue-300 text-xs sm:text-sm font-medium tracking-widest uppercase mb-2 sm:mb-3">
+            Premium Formula
+          </p>
+          <h2
+            class="text-3xl sm:text-4xl md:text-5xl font-bungee font-extrabold allerta-stencil-regular text-white leading-tight">
+            Energy That
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-cyan-200 to-blue-100">
+              Never Quits
+            </span>
+          </h2>
+        </div>
+
+        <p class="text-blue-200/70 text-sm sm:text-md leading-relaxed">
+          A carefully balanced blend of high-quality ingredients designed to
+          deliver clean, sustained energy without the crash.
+        </p>
+
+        <!-- Full width Instant Energy card -->
+        <div
+          class="col-span-2 relative group rounded-2xl p-[1px] bg-gradient-to-b from-blue-400/40 via-blue-300/20 to-blue-500/10 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.5),0_4px_12px_rgba(0,0,0,0.3)] hover:shadow-[0_15px_40px_-5px_rgba(0,0,0,0.6),0_6px_20px_rgba(59,130,246,0.3)] transition-all duration-300 hover:-translate-y-1">
           <div
-            id="showcase-can"
-            class="relative w-[280px] h-[400px] sm:w-[340px] sm:h-[480px] md:w-[400px] md:h-[500px]"
-          >
-            <!-- Glow ring behind can -->
-            <div
-              class="absolute inset-0 flex items-center justify-center pointer-events-none"
-            >
+            class="relative h-full rounded-[15px] overflow-hidden bg-gradient-to-br from-[#0f1f3a]/90 to-[#0a1525]/95 backdrop-blur-xl border border-blue-500/20">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/15 to-cyan-500/10"></div>
+
+            <div class="relative z-10 p-3 sm:p-4 flex items-center gap-2 sm:gap-3">
               <div
-                class="w-48 h-48 sm:w-64 sm:h-64 bg-blue-400/10 rounded-full blur-2xl"
-              ></div>
+                class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-blue-500/30 border border-blue-400/50 flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_2px_6px_rgba(0,0,0,0.3)] flex-shrink-0">
+                <svg class="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 text-blue-300" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div>
+                <div class="text-white text-xs sm:text-sm font-medium">
+                  Instant Energy
+                </div>
+                <div class="text-blue-300/70 text-[10px] sm:text-xs">
+                  Feel the spirit in seconds
+                </div>
+              </div>
             </div>
-            <div id="can-3d" class="w-full h-full"></div>
+
+            <div
+              class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-blue-300/40 to-transparent">
+            </div>
           </div>
         </div>
 
-        <!-- RIGHT SIDE: Content -->
-        <div class="space-y-6 sm:space-y-8 px-2 sm:px-0">
-          <div>
-            <p
-              class="text-blue-300 text-xs sm:text-sm font-medium tracking-widest uppercase mb-2 sm:mb-3"
-            >
-              Premium Formula
-            </p>
-            <h2
-              class="text-3xl sm:text-4xl md:text-5xl font-bungee font-extrabold allerta-stencil-regular text-white leading-tight"
-            >
-              Energy That
-              <span
-                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-cyan-200 to-blue-100"
-              >
-                Never Quits
-              </span>
-            </h2>
+        <!-- Feature Grid -->
+        <div class="grid grid-cols-2 gap-2 sm:gap-4">
+          <!-- Card 1 -->
+          <div class="relative group rounded-xl p-[1px] bg-gradient-to-b from-blue-400/20 to-blue-500/10">
+            <div
+              class="rounded-[10px] px-3 sm:px-4 py-2 sm:py-2.5 bg-[#0a1a30]/80 backdrop-blur-2xl border border-blue-500/15">
+              <div class="text-blue-300 text-[11px] sm:text-[13px] font-medium">
+                Vitamin B
+              </div>
+              <div class="text-blue-300/50 text-[9px] sm:text-[10px] mt-0.5">
+                Energy metabolism
+              </div>
+            </div>
           </div>
 
-          <p class="text-blue-200/70 text-sm sm:text-md leading-relaxed">
-            A carefully balanced blend of high-quality ingredients designed to
-            deliver clean, sustained energy without the crash.
-          </p>
-
-          <!-- Full width Instant Energy card -->
+          <!-- Card 2 -->
           <div
-            class="col-span-2 relative group rounded-2xl p-[1px] bg-gradient-to-b from-blue-400/40 via-blue-300/20 to-blue-500/10 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.5),0_4px_12px_rgba(0,0,0,0.3)] hover:shadow-[0_15px_40px_-5px_rgba(0,0,0,0.6),0_6px_20px_rgba(59,130,246,0.3)] transition-all duration-300 hover:-translate-y-1"
-          >
+            class="relative group rounded-xl p-[1px] bg-gradient-to-b from-blue-400/25 via-blue-300/15 to-blue-500/10 shadow-[0_8px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_12px_28px_rgba(59,130,246,0.25)] transition-all duration-300 hover:-translate-y-1">
             <div
-              class="relative h-full rounded-[15px] overflow-hidden bg-gradient-to-br from-[#0f1f3a]/90 to-[#0a1525]/95 backdrop-blur-xl border border-blue-500/20"
-            >
-              <div
-                class="absolute inset-0 bg-gradient-to-r from-blue-500/15 to-cyan-500/10"
-              ></div>
+              class="relative rounded-[10px] overflow-hidden bg-gradient-to-br from-[#0a1a30]/85 to-[#061020]/90 backdrop-blur-2xl border border-blue-500/15">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent"></div>
 
-              <div
-                class="relative z-10 p-3 sm:p-4 flex items-center gap-2 sm:gap-3"
-              >
-                <div
-                  class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-blue-500/30 border border-blue-400/50 flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_2px_6px_rgba(0,0,0,0.3)] flex-shrink-0"
-                >
-                  <svg
-                    class="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 text-blue-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <div class="text-white text-xs sm:text-sm font-medium">
-                    Instant Energy
-                  </div>
-                  <div class="text-blue-300/70 text-[10px] sm:text-xs">
-                    Feel the spirit in seconds
-                  </div>
-                </div>
+              <div class="relative z-10 px-3 sm:px-4 py-2 sm:py-3">
+                <h4 class="text-blue-300 text-xs sm:text-sm font-semibold">
+                  Caffeine
+                </h4>
+                <p class="text-blue-300/55 text-[10px] sm:text-[11px] mt-0.5">
+                  150mg clean focus
+                </p>
               </div>
 
               <div
-                class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-blue-300/40 to-transparent"
-              ></div>
+                class="absolute top-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent">
+              </div>
             </div>
           </div>
 
-          <!-- Feature Grid -->
-          <div class="grid grid-cols-2 gap-2 sm:gap-4">
-            <!-- Card 1 -->
+          <!-- Card 3 -->
+          <div
+            class="relative group rounded-xl p-[1px] bg-gradient-to-b from-blue-400/25 via-blue-300/15 to-blue-500/10 shadow-[0_8px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_12px_28px_rgba(59,130,246,0.25)] transition-all duration-300 hover:-translate-y-1">
             <div
-              class="relative group rounded-xl p-[1px] bg-gradient-to-b from-blue-400/20 to-blue-500/10"
-            >
+              class="relative rounded-[10px] overflow-hidden bg-gradient-to-br from-[#0a1a30]/85 to-[#061020]/90 backdrop-blur-2xl border border-blue-500/15">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent"></div>
+
+              <div class="relative z-10 px-3 sm:px-4 py-2 sm:py-3">
+                <h4 class="text-blue-300 text-xs sm:text-sm font-semibold">
+                  Taurine
+                </h4>
+                <p class="text-blue-300/55 text-[10px] sm:text-[11px] mt-0.5">
+                  Boosts endurance
+                </p>
+              </div>
+
               <div
-                class="rounded-[10px] px-3 sm:px-4 py-2 sm:py-2.5 bg-[#0a1a30]/80 backdrop-blur-2xl border border-blue-500/15"
-              >
-                <div
-                  class="text-blue-300 text-[11px] sm:text-[13px] font-medium"
-                >
-                  Vitamin B
-                </div>
-                <div class="text-blue-300/50 text-[9px] sm:text-[10px] mt-0.5">
-                  Energy metabolism
-                </div>
+                class="absolute top-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent">
               </div>
             </div>
+          </div>
 
-            <!-- Card 2 -->
+          <!-- Card 4 -->
+          <div
+            class="relative group rounded-xl p-[1px] bg-gradient-to-b from-blue-400/25 via-blue-300/15 to-blue-500/10 shadow-[0_8px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_12px_28px_rgba(59,130,246,0.25)] transition-all duration-300 hover:-translate-y-1">
             <div
-              class="relative group rounded-xl p-[1px] bg-gradient-to-b from-blue-400/25 via-blue-300/15 to-blue-500/10 shadow-[0_8px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_12px_28px_rgba(59,130,246,0.25)] transition-all duration-300 hover:-translate-y-1"
-            >
-              <div
-                class="relative rounded-[10px] overflow-hidden bg-gradient-to-br from-[#0a1a30]/85 to-[#061020]/90 backdrop-blur-2xl border border-blue-500/15"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent"
-                ></div>
+              class="relative rounded-[10px] overflow-hidden bg-gradient-to-br from-[#0a1a30]/85 to-[#061020]/90 backdrop-blur-2xl border border-blue-500/15">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent"></div>
 
-                <div class="relative z-10 px-3 sm:px-4 py-2 sm:py-3">
-                  <h4 class="text-blue-300 text-xs sm:text-sm font-semibold">
-                    Caffeine
-                  </h4>
-                  <p class="text-blue-300/55 text-[10px] sm:text-[11px] mt-0.5">
-                    150mg clean focus
-                  </p>
-                </div>
-
-                <div
-                  class="absolute top-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent"
-                ></div>
+              <div class="relative z-10 px-3 sm:px-4 py-2 sm:py-3">
+                <h4 class="text-blue-300 text-xs sm:text-sm font-semibold">
+                  Refreshing
+                </h4>
+                <p class="text-blue-300/55 text-[10px] sm:text-[11px] mt-0.5">
+                  Crisp smooth taste
+                </p>
               </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div
-              class="relative group rounded-xl p-[1px] bg-gradient-to-b from-blue-400/25 via-blue-300/15 to-blue-500/10 shadow-[0_8px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_12px_28px_rgba(59,130,246,0.25)] transition-all duration-300 hover:-translate-y-1"
-            >
               <div
-                class="relative rounded-[10px] overflow-hidden bg-gradient-to-br from-[#0a1a30]/85 to-[#061020]/90 backdrop-blur-2xl border border-blue-500/15"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent"
-                ></div>
-
-                <div class="relative z-10 px-3 sm:px-4 py-2 sm:py-3">
-                  <h4 class="text-blue-300 text-xs sm:text-sm font-semibold">
-                    Taurine
-                  </h4>
-                  <p class="text-blue-300/55 text-[10px] sm:text-[11px] mt-0.5">
-                    Boosts endurance
-                  </p>
-                </div>
-
-                <div
-                  class="absolute top-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent"
-                ></div>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div
-              class="relative group rounded-xl p-[1px] bg-gradient-to-b from-blue-400/25 via-blue-300/15 to-blue-500/10 shadow-[0_8px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_12px_28px_rgba(59,130,246,0.25)] transition-all duration-300 hover:-translate-y-1"
-            >
-              <div
-                class="relative rounded-[10px] overflow-hidden bg-gradient-to-br from-[#0a1a30]/85 to-[#061020]/90 backdrop-blur-2xl border border-blue-500/15"
-              >
-                <div
-                  class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent"
-                ></div>
-
-                <div class="relative z-10 px-3 sm:px-4 py-2 sm:py-3">
-                  <h4 class="text-blue-300 text-xs sm:text-sm font-semibold">
-                    Refreshing
-                  </h4>
-                  <p class="text-blue-300/55 text-[10px] sm:text-[11px] mt-0.5">
-                    Crisp smooth taste
-                  </p>
-                </div>
-
-                <div
-                  class="absolute top-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent"
-                ></div>
+                class="absolute top-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent">
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Three.js Import Map -->
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+
+  <!-- Particle System Script -->
+  <script>
+    (function () {
+      const canvas = document.getElementById("particle-canvas");
+      if (!canvas) return;
+
+      const ctx = canvas.getContext("2d");
+      let width, height;
+      let particles = [];
+      const PARTICLE_COUNT = 100;
+      const MAX_SPEED = 0.5;
+
+      function resize() {
+        const parent = canvas.parentElement;
+        width = parent.offsetWidth;
+        height = parent.offsetHeight;
+        canvas.width = width;
+        canvas.height = height;
+      }
+
+      function createParticle() {
+        return {
+          x: Math.random() * width,
+          y: Math.random() * height,
+          size: Math.random() * 2.5 + 1.5,
+          speedX: (Math.random() - 0.5) * MAX_SPEED * 2,
+          speedY: (Math.random() - 0.5) * MAX_SPEED * 2,
+          opacity: Math.random() * 0.4 + 0.2,
+          twinkle: Math.random() * Math.PI * 2,
+          twinkleSpeed: 0.02 + Math.random() * 0.03,
+        };
+      }
+
+      function initParticles() {
+        particles = [];
+        for (let i = 0; i < PARTICLE_COUNT; i++) {
+          particles.push(createParticle());
         }
       }
-    </script>
 
-    <!-- Three.js 3D Can Script -->
-    <script type="module">
-      import * as THREE from "three";
-      import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+      function drawParticle(p) {
+        const twinkle = Math.sin(p.twinkle) * 0.3 + 0.7;
+        const opacity = p.opacity * twinkle;
 
-      const container = document.getElementById("can-3d");
-      if (!container) {
-        console.error("Container #can-3d not found");
-      } else {
-        initCan();
+        const gradient = ctx.createRadialGradient(
+          p.x,
+          p.y,
+          0,
+          p.x,
+          p.y,
+          p.size * 3,
+        );
+        gradient.addColorStop(0, `rgba(100, 180, 255, ${opacity * 0.8})`);
+        gradient.addColorStop(0.3, `rgba(60, 140, 255, ${opacity * 0.4})`);
+        gradient.addColorStop(1, `rgba(30, 80, 200, 0)`);
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size * 3, 0, Math.PI * 2);
+        ctx.fillStyle = gradient;
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size * 0.6, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(180, 220, 255, ${opacity * 0.9})`;
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size * 0.2, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 255, 255, ${opacity * 0.6})`;
+        ctx.fill();
       }
 
-      function initCan() {
-        const width = container.clientWidth || 280;
-        const height = container.clientHeight || 420;
+      function drawConnections() {
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
 
+            if (dist < 150) {
+              const opacity = (1 - dist / 150) * 0.12;
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = `rgba(100, 180, 255, ${opacity})`;
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        }
+      }
+
+      function animateParticles() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (const p of particles) {
+          p.x += p.speedX;
+          p.y += p.speedY;
+          p.twinkle += p.twinkleSpeed;
+
+          if (p.x < 0 || p.x > width) {
+            p.speedX *= -1;
+            p.x = Math.max(0, Math.min(width, p.x));
+          }
+          if (p.y < 0 || p.y > height) {
+            p.speedY *= -1;
+            p.y = Math.max(0, Math.min(height, p.y));
+          }
+
+          drawParticle(p);
+        }
+
+        drawConnections();
+        requestAnimationFrame(animateParticles);
+      }
+
+      window.addEventListener("resize", () => {
+        resize();
+        for (const p of particles) {
+          p.x = Math.min(width, p.x);
+          p.y = Math.min(height, p.y);
+        }
+      });
+
+      window.addEventListener("orientationchange", () => {
+        setTimeout(resize, 300);
+      });
+
+      resize();
+      initParticles();
+      animateParticles();
+
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) {
+          resize();
+        }
+      });
+    })();
+  </script>
+
+  <!-- Product - Blue Theme (Fully Responsive) -->
+  <section class="relative bg-[#060d1a] py-6 px-4 overflow-hidden">
+    <!-- Large Outline Brand Name -->
+    <div
+      class="absolute top-8 left-1/2 -translate-x-1/2 text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] xl:text-[7vw] bungee-shade uppercase leading-none tracking-[-0.06em] pointer-events-none select-none z-0 outline-text whitespace-nowrap">
+      FAST TRACK
+    </div>
+
+    <!-- Soft blue glows -->
+    <div
+      class="absolute top-1/2 left-1/3 -translate-y-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none">
+    </div>
+    <div
+      class="absolute bottom-0 right-1/4 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-cyan-500/5 rounded-full blur-[100px] pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10 items-center">
+        <!-- Left Content -->
+        <div class="lg:col-span-4 space-y-3 sm:space-y-4 md:space-y-5 text-center lg:text-left">
+          <!-- Eyebrow -->
+          <p
+            class="text-cyan-400 text-[10px] sm:text-xs uppercase tracking-[0.25em] sm:tracking-[0.35em] font-semibold">
+            POWER • PERFORMANCE • FOCUS
+          </p>
+
+          <!-- Heading -->
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bungee font-black leading-[0.9] tracking-tight">
+            <span class="text-white">FAST</span>
+            <span class="bg-gradient-to-r from-blue-400 via-cyan-300 to-white bg-clip-text text-transparent">
+              TRACK
+            </span>
+          </h2>
+
+          <!-- Description -->
+          <p class="max-w-sm mx-auto lg:mx-0 text-blue-100/65 text-sm sm:text-base leading-6 sm:leading-7">
+            Built for those who never slow down, FAST TRACK delivers a
+            refreshing boost with every sip anytime, anywhere.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap gap-3 justify-center lg:justify-start pt-3">
+            <button onclick="openBulkOrder()"
+              class="px-5 py-2.5 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-sm font-bold hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300 flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Bulk Order
+            </button>
+            <button
+              class="px-5 py-2.5 rounded-lg bg-white/10 backdrop-blur-sm text-white text-sm font-bold border border-white/20 hover:bg-white/20 transition-all duration-300">
+              Buy Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Center - Product Can -->
+        <div class="lg:col-span-4 flex justify-center items-center relative">
+          <!-- Animated Glow -->
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div
+              class="hero-glow w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse">
+            </div>
+          </div>
+
+          <!-- Can -->
+          <div class="hero-can relative z-10 w-48 sm:w-56 md:w-64 lg:w-72">
+            <img src="/can.png" alt="Fast Track Premium Energy Drink" class="w-full h-auto" />
+          </div>
+        </div>
+
+        <!-- Right - Lifestyle circle -->
+        <div class="lg:col-span-4 flex justify-center lg:justify-end">
+          <div class="relative">
+            <!-- Decorative dots -->
+            <div
+              class="absolute -top-6 sm:-top-8 md:-top-10 -left-6 sm:-left-8 md:-left-10 grid grid-cols-5 gap-2 sm:gap-3 opacity-30">
+              <div class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"></div>
+              <div class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"></div>
+              <div class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"></div>
+              <div class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"></div>
+              <div class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"></div>
+              <div class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"></div>
+              <div class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"></div>
+              <div class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"></div>
+              <div class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"></div>
+              <div class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"></div>
+            </div>
+
+            <div
+              class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-[4px] sm:border-[5px] md:border-[6px] border-blue-500/20 shadow-[0_0_40px_rgba(59,130,246,0.1)] sm:shadow-[0_0_50px_rgba(59,130,246,0.12)] md:shadow-[0_0_60px_rgba(59,130,246,0.15)]">
+              <img src="/can2.png" alt="Fast Track" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BULK ORDER OVERLAY ===== -->
+  <div id="bulkOrderOverlay"
+    class="fixed inset-0 z-[9999] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-400">
+    <!-- Backdrop -->
+    <div class="absolute inset-0 bg-black/80 backdrop-blur-md" onclick="closeBulkOrder()"></div>
+
+    <!-- Modal -->
+    <div
+      class="relative w-full max-w-lg bg-gradient-to-br from-[#0a1628] to-[#060d1a] rounded-2xl border border-blue-500/20 shadow-[0_0_80px_rgba(59,130,246,0.15)] p-6 sm:p-8 transform scale-95 transition-all duration-400">
+      <!-- Close Button -->
+      <button onclick="closeBulkOrder()"
+        class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Header -->
+      <div class="text-center mb-6">
+        <div class="inline-flex items-center gap-2 text-blue-400 text-xs font-semibold tracking-widest uppercase mb-2">
+          <span class="w-8 h-px bg-blue-400/50"></span>
+          BULK ORDER
+          <span class="w-8 h-px bg-blue-400/50"></span>
+        </div>
+        <h3 class="text-2xl font-bold text-white">Choose Your Pack</h3>
+        <p class="text-sm text-blue-100/50 mt-1">
+          Select pack size and quantity
+        </p>
+      </div>
+
+      <!-- Pack Selection -->
+      <div class="grid grid-cols-3 gap-3 mb-6">
+        <button onclick="selectPack(6)" data-pack="6"
+          class="pack-btn relative p-4 rounded-xl bg-white/5 border-2 border-white/10 hover:border-blue-500/50 transition-all duration-300 group text-center">
+          <div class="text-2xl mb-1">📦</div>
+          <div class="text-white font-bold text-sm">6 Pack</div>
+          <div class="text-blue-300/60 text-xs">6 cans</div>
+          <div class="absolute inset-0 rounded-xl bg-blue-500/0 group-hover:bg-blue-500/5 transition-all duration-300">
+          </div>
+        </button>
+        <button onclick="selectPack(12)" data-pack="12"
+          class="pack-btn relative p-4 rounded-xl bg-white/5 border-2 border-white/10 hover:border-blue-500/50 transition-all duration-300 group text-center">
+          <div class="text-2xl mb-1">📦</div>
+          <div class="text-white font-bold text-sm">12 Pack</div>
+          <div class="text-blue-300/60 text-xs">12 cans</div>
+          <div class="absolute inset-0 rounded-xl bg-blue-500/0 group-hover:bg-blue-500/5 transition-all duration-300">
+          </div>
+        </button>
+        <button onclick="selectPack(24)" data-pack="24"
+          class="pack-btn relative p-4 rounded-xl bg-white/5 border-2 border-white/10 hover:border-blue-500/50 transition-all duration-300 group text-center">
+          <div class="text-2xl mb-1">📦</div>
+          <div class="text-white font-bold text-sm">24 Pack</div>
+          <div class="text-blue-300/60 text-xs">24 cans</div>
+          <div class="absolute inset-0 rounded-xl bg-blue-500/0 group-hover:bg-blue-500/5 transition-all duration-300">
+          </div>
+        </button>
+      </div>
+
+      <!-- Quantity Control -->
+      <div class="bg-white/5 rounded-xl p-4 mb-6">
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-blue-100/60">Quantity</span>
+          <div class="flex items-center gap-3">
+            <button onclick="updateQuantity(-1)"
+              class="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 text-white text-lg font-bold transition-colors flex items-center justify-center">
+              −
+            </button>
+            <span id="quantityDisplay" class="text-xl font-bold text-white min-w-[32px] text-center">1</span>
+            <button onclick="updateQuantity(1)"
+              class="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 text-white text-lg font-bold transition-colors flex items-center justify-center">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-xl p-4 mb-6 border border-blue-500/10">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-sm text-blue-100/60">Selected Pack</span>
+          <span id="selectedPackDisplay" class="text-sm font-semibold text-white">12 Pack</span>
+        </div>
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-sm text-blue-100/60">Quantity</span>
+          <span id="selectedQuantityDisplay" class="text-sm font-semibold text-white">× 1</span>
+        </div>
+        <div class="border-t border-blue-500/20 pt-2 flex items-center justify-between">
+          <span class="text-sm font-bold text-white">Total Cans</span>
+          <span id="totalCansDisplay"
+            class="text-xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text">12</span>
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div class="flex gap-3">
+        <button onclick="closeBulkOrder()"
+          class="flex-1 px-4 py-2.5 rounded-lg bg-white/5 text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-300 text-sm font-medium">
+          Cancel
+        </button>
+        <button onclick="continueOrder()"
+          class="flex-1 px-4 py-2.5 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300 text-sm">
+          Continue Order
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* Bulk Order Overlay Styles */
+    #bulkOrderOverlay {
+      transition:
+        opacity 0.4s ease,
+        visibility 0.4s ease;
+    }
+
+    #bulkOrderOverlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    #bulkOrderOverlay.active .relative {
+      transform: scale(1);
+    }
+
+    #bulkOrderOverlay .relative {
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .pack-btn.active {
+      border-color: #3b82f6;
+      background: rgba(59, 130, 246, 0.15);
+      box-shadow: 0 0 30px rgba(59, 130, 246, 0.15);
+    }
+
+    .pack-btn.active .text-white {
+      color: #60a5fa;
+    }
+  </style>
+
+  <!-- Distributor + Careers -->
+  <section id="distributor" class="bg-[#080808] py-12 sm:py-16 relative overflow-hidden">
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(37,99,235,.18),transparent_30%),radial-gradient(circle_at_80%_80%,rgba(6,182,212,.12),transparent_30%),linear-gradient(180deg,#081321,#040810,#020306)]">
+    </div>
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-6 relative z-10">
+      <!-- Distributor Card -->
+      <div
+        class="relative rounded-3xl p-[1px] bg-gradient-to-br from-white/40 via-blue-400/20 to-white/10 shadow-[0_25px_70px_rgba(0,0,0,.45)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_35px_80px_rgba(37,99,235,.25)]">
+        <div
+          class="absolute -inset-8 rounded-[40px] bg-blue-500/10 blur-3xl opacity-0 group-hover:opacity-100 transition duration-700">
+        </div>
+
+        <div
+          class="relative h-full rounded-[22px] overflow-hidden bg-gradient-to-br from-[#0c1222]/90 to-[#05080f]/95 backdrop-blur-xl border border-white/10">
+          <div
+            class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-white/35 to-transparent">
+          </div>
+
+          <div class="p-6 sm:p-8 md:p-10">
+            <h2 class="text-2xl sm:text-3xl font-semibold font-light text-white mb-2">
+              Become a Distributor
+            </h2>
+            <p class="text-white/50 text-sm mb-6 sm:mb-8">
+              Premium partnership. Exclusive territories.
+            </p>
+
+            <form id="distributor-form" class="space-y-4 sm:space-y-5">
+              <div>
+                <label class="block text-xs font-medium text-blue-300/80 mb-1.5 tracking-wide">Full name</label>
+                <input name="full_name" type="text" required
+                  class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-blue-400/40 focus:ring-1 focus:ring-blue-400/20 transition"
+                  placeholder="James Hunt" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-blue-300/80 mb-1.5 tracking-wide">Email</label>
+                <input name="email" type="email" required
+                  class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-blue-400/40 focus:ring-1 focus:ring-blue-400/20 transition"
+                  placeholder="james@fasttrack.com" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-blue-300/80 mb-1.5 tracking-wide">Company</label>
+                <input name="company" type="text"
+                  class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-blue-400/40 focus:ring-1 focus:ring-blue-400/20 transition"
+                  placeholder="Motorsport Ltd." />
+              </div>
+
+              <button type="submit" class="liquid-btn w-full mt-4">
+                Apply now
+              </button>
+
+              <div id="distributor-message" class="text-sm mt-3 hidden"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Careers Card -->
+      <div
+        class="relative rounded-3xl p-[1px] bg-gradient-to-br from-white/40 via-blue-400/20 to-white/10 shadow-[0_25px_70px_rgba(0,0,0,.45)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_35px_80px_rgba(37,99,235,.25)]">
+        <div
+          class="relative h-full rounded-[22px] overflow-hidden bg-gradient-to-br from-[#0c1222]/90 to-[#05080f]/95 backdrop-blur-xl border border-white/10">
+          <div
+            class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-white/35 to-transparent">
+          </div>
+
+          <div class="p-6 sm:p-8 md:p-10">
+            <h2 class="text-2xl sm:text-3xl font-semibold font-light text-white mb-2">
+              Join Our Team
+            </h2>
+            <p class="text-white/50 text-sm mb-6 sm:mb-8">
+              Performance-driven culture. Global impact.
+            </p>
+
+            <form id="careers-form" class="space-y-4 sm:space-y-5">
+              <div>
+                <label class="block text-xs font-medium text-blue-300/80 mb-1.5 tracking-wide">Full name</label>
+                <input name="full_name" type="text" required
+                  class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-blue-400/40 focus:ring-1 focus:ring-blue-400/20 transition"
+                  placeholder="Ayrton Senna" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-blue-300/80 mb-1.5 tracking-wide">Email</label>
+                <input name="email" type="email" required
+                  class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-blue-400/40 focus:ring-1 focus:ring-blue-400/20 transition"
+                  placeholder="ayrton@fasttrack.com" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-blue-300/80 mb-1.5 tracking-wide">Role interest</label>
+                <input name="role" type="text"
+                  class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-blue-400/40 focus:ring-1 focus:ring-blue-400/20 transition"
+                  placeholder="Brand strategist" />
+              </div>
+
+              <button type="submit" class="liquid-btn w-full mt-4">
+                Send application
+              </button>
+
+              <div id="careers-message" class="text-sm mt-3 hidden"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="relative border-t border-white/5 bg-[#050505] py-8 px-6">
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent">
+  </div>
+
+  <div class="max-w-6xl mx-auto">
+    <!-- Main Footer Content -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
+      
+      <!-- Logo -->
+      <div class="text-sm tracking-wide">
+        <span class="text-white font-semibold">FAST</span><span class="text-blue-300/70 font-light">TRACK</span>
+        <p class="text-[#606880] text-xs mt-1 max-w-xs text-center md:text-left">
+          Premium energy solutions for a sustainable future.
+        </p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex items-center gap-5">
+        <a href="#" class="text-[#606880] hover:text-blue-400 transition-colors duration-300" aria-label="Instagram">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+          </svg>
+        </a>
+
+        <a href="#" class="text-[#606880] hover:text-blue-400 transition-colors duration-300" aria-label="YouTube">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+
+        <a href="#" class="text-[#606880] hover:text-blue-400 transition-colors duration-300" aria-label="LinkedIn">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Legal Links -->
+      <div class="flex flex-wrap items-center justify-center gap-3 text-xs">
+        <button onclick="openModal('privacy')" class="text-[#606880] hover:text-blue-400 transition-colors duration-300 cursor-pointer">
+          Privacy Policy
+        </button>
+        <span class="text-[#606880]/30">|</span>
+        <button onclick="openModal('terms')" class="text-[#606880] hover:text-blue-400 transition-colors duration-300 cursor-pointer">
+          Terms & Conditions
+        </button>
+        <span class="text-[#606880]/30">|</span>
+        <button onclick="openModal('cookies')" class="text-[#606880] hover:text-blue-400 transition-colors duration-300 cursor-pointer">
+          Cookie Policy
+        </button>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="my-6 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+    <!-- Bottom Row -->
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs">
+      <div class="text-[#606880]">
+        © 2026 <span class="text-white font-medium">FASTTRACK</span>. All rights reserved.
+      </div>
+      <div class="text-[#606880] flex items-center gap-2">
+        <span>Developed by
+        Kunash Media Solutions</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= MODAL OVERLAYS ================= -->
+<!-- Privacy Policy Modal -->
+<div id="privacyModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm transition-opacity duration-300" onclick="closeModalOutside(event, 'privacyModal')">
+  <div class="relative bg-[#0a0a0a] border border-white/10 rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-hidden shadow-2xl">
+    <!-- Modal Header -->
+    <div class="flex items-center justify-between px-6 py-4 border-b border-white/10">
+      <h3 class="text-lg font-semibold text-white">Privacy Policy</h3>
+      <button onclick="closeModal('privacyModal')" class="text-[#606880] hover:text-white transition-colors duration-300">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <!-- Modal Body -->
+    <div class="px-6 py-5 overflow-y-auto max-h-[65vh] text-[#c0c0c0] text-sm space-y-4">
+      <h4 class="text-white font-semibold">1. Information We Collect</h4>
+      <p>We collect information you provide directly, such as your name, email address, phone number, and any other information you choose to provide.</p>
+      
+      <h4 class="text-white font-semibold">2. How We Use Your Information</h4>
+      <p>We use the information we collect to provide, maintain, and improve our services, and to communicate with you about products, services, and offers.</p>
+      
+      <h4 class="text-white font-semibold">3. Information Sharing</h4>
+      <p>We do not share your personal information with third parties except as necessary to provide our services or as required by law.</p>
+      
+      <h4 class="text-white font-semibold">4. Data Security</h4>
+      <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, or destruction.</p>
+      
+      <h4 class="text-white font-semibold">5. Your Rights</h4>
+      <p>You have the right to access, correct, or delete your personal information at any time. Contact us to exercise these rights.</p>
+      
+      <h4 class="text-white font-semibold">6. Updates to This Policy</h4>
+      <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page.</p>
+      
+      <p class="text-[#606880] text-xs mt-4">Last updated: September 2026</p>
+    </div>
+    <!-- Modal Footer -->
+    <div class="px-6 py-4 border-t border-white/10 flex justify-end">
+      <button onclick="closeModal('privacyModal')" class="px-4 py-2 rounded-lg bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors duration-300 text-sm font-medium">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Terms & Conditions Modal -->
+<div id="termsModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm transition-opacity duration-300" onclick="closeModalOutside(event, 'termsModal')">
+  <div class="relative bg-[#0a0a0a] border border-white/10 rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-hidden shadow-2xl">
+    <!-- Modal Header -->
+    <div class="flex items-center justify-between px-6 py-4 border-b border-white/10">
+      <h3 class="text-lg font-semibold text-white">Terms & Conditions</h3>
+      <button onclick="closeModal('termsModal')" class="text-[#606880] hover:text-white transition-colors duration-300">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <!-- Modal Body -->
+    <div class="px-6 py-5 overflow-y-auto max-h-[65vh] text-[#c0c0c0] text-sm space-y-4">
+      <h4 class="text-white font-semibold">1. Acceptance of Terms</h4>
+      <p>By using our website and services, you agree to these Terms & Conditions. If you do not agree, please do not use our services.</p>
+      
+      <h4 class="text-white font-semibold">2. Use of Services</h4>
+      <p>You agree to use our services only for lawful purposes and in accordance with these terms. You are responsible for maintaining the confidentiality of your account credentials.</p>
+      
+      <h4 class="text-white font-semibold">3. Intellectual Property</h4>
+      <p>All content, trademarks, and intellectual property on this website are owned by FASTTRACK. You may not reproduce, distribute, or create derivative works without our express consent.</p>
+      
+      <h4 class="text-white font-semibold">4. User Conduct</h4>
+      <p>You agree not to engage in any activity that disrupts or interferes with our services, including but not limited to hacking, spamming, or transmitting malicious code.</p>
+      
+      <h4 class="text-white font-semibold">5. Limitation of Liability</h4>
+      <p>FASTTRACK is not liable for any indirect, incidental, or consequential damages arising from the use of our services, to the extent permitted by law.</p>
+      
+      <h4 class="text-white font-semibold">6. Changes to Terms</h4>
+      <p>We reserve the right to update these terms at any time. Continued use of our services constitutes acceptance of the updated terms.</p>
+      
+      <p class="text-[#606880] text-xs mt-4">Last updated: September 2026</p>
+    </div>
+    <!-- Modal Footer -->
+    <div class="px-6 py-4 border-t border-white/10 flex justify-end">
+      <button onclick="closeModal('termsModal')" class="px-4 py-2 rounded-lg bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors duration-300 text-sm font-medium">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Cookie Policy Modal -->
+<div id="cookiesModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm transition-opacity duration-300" onclick="closeModalOutside(event, 'cookiesModal')">
+  <div class="relative bg-[#0a0a0a] border border-white/10 rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-hidden shadow-2xl">
+    <!-- Modal Header -->
+    <div class="flex items-center justify-between px-6 py-4 border-b border-white/10">
+      <h3 class="text-lg font-semibold text-white">Cookie Policy</h3>
+      <button onclick="closeModal('cookiesModal')" class="text-[#606880] hover:text-white transition-colors duration-300">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <!-- Modal Body -->
+    <div class="px-6 py-5 overflow-y-auto max-h-[65vh] text-[#c0c0c0] text-sm space-y-4">
+      <h4 class="text-white font-semibold">1. What Are Cookies</h4>
+      <p>Cookies are small text files stored on your device that help us improve your experience on our website.</p>
+      
+      <h4 class="text-white font-semibold">2. How We Use Cookies</h4>
+      <p>We use cookies for essential functionality, analytics, and to remember your preferences. We do not use cookies for targeted advertising.</p>
+      
+      <h4 class="text-white font-semibold">3. Types of Cookies We Use</h4>
+      <ul class="list-disc pl-5 space-y-1">
+        <li><span class="text-white">Essential Cookies:</span> Required for the website to function properly</li>
+        <li><span class="text-white">Analytics Cookies:</span> Help us understand how visitors interact with our site</li>
+        <li><span class="text-white">Preference Cookies:</span> Remember your settings and preferences</li>
+      </ul>
+      
+      <h4 class="text-white font-semibold">4. Managing Cookies</h4>
+      <p>You can control and manage cookies through your browser settings. Please note that disabling essential cookies may affect the functionality of our website.</p>
+      
+      <h4 class="text-white font-semibold">5. Third-Party Cookies</h4>
+      <p>We may use third-party services that set their own cookies. These are governed by the respective third-party privacy policies.</p>
+      
+      <p class="text-[#606880] text-xs mt-4">Last updated: September 2026</p>
+    </div>
+    <!-- Modal Footer -->
+    <div class="px-6 py-4 border-t border-white/10 flex justify-end">
+      <button onclick="closeModal('cookiesModal')" class="px-4 py-2 rounded-lg bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors duration-300 text-sm font-medium">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+  <!-- GSAP + Lenis + Three.js init -->
+  <script>
+    (function () {
+      // Lenis smooth scroll
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      });
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+
+      // nav scroll
+      const nav = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 40) nav.classList.add("scrolled");
+        else nav.classList.remove("scrolled");
+      });
+
+      // GSAP + ScrollTrigger
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Hero split text
+      const headline = document.getElementById("hero-headline");
+      if (headline) {
+        const split = new SplitType(headline, { types: "words,chars" });
+        gsap.from(split.chars, {
+          opacity: 0,
+          y: 60,
+          duration: 1.2,
+          ease: "power4.out",
+          stagger: 0.04,
+          delay: 0.6,
+        });
+      }
+
+      // Hero buttons
+      gsap.from(".hero-cta .btn-premium", {
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        ease: "power4.out",
+        stagger: 0.15,
+        delay: 1.2,
+      });
+
+      // Showcase can
+      gsap.from("#showcase-can", {
+        opacity: 0,
+        scale: 0.9,
+        duration: 1.2,
+        ease: "expo.out",
+        scrollTrigger: { trigger: "#showcase", start: "top 80%" },
+      });
+
+      // Feature cards stagger
+      gsap.from(".feature-item", {
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        ease: "power3.out",
+        stagger: 0.1,
+        scrollTrigger: { trigger: "#showcase", start: "top 60%" },
+      });
+
+      // Feature cards (3 columns)
+      gsap.from(".feature-card", {
+        opacity: 0,
+        y: 40,
+        duration: 0.9,
+        ease: "power4.out",
+        stagger: 0.15,
+        scrollTrigger: { trigger: ".feature-card", start: "top 85%" },
+      });
+
+      // Energy chamber pin
+      ScrollTrigger.create({
+        trigger: "#energy-chamber",
+        start: "top top",
+        end: "bottom bottom",
+        pin: true,
+        pinSpacing: true,
+        scrub: 1,
+      });
+
+      // reveal class observer
+      const reveals = document.querySelectorAll(".reveal");
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.2 },
+      );
+      reveals.forEach((el) => obs.observe(el));
+
+      // ----- Three.js hero (simple PBR can with reflections) -----
+      const container = document.getElementById("hero-canvas");
+      if (container) {
         const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x050505);
 
         const camera = new THREE.PerspectiveCamera(
-          42,
-          width / height,
+          40,
+          container.clientWidth / container.clientHeight,
           0.1,
           100,
         );
-        camera.position.set(1.2, 0.8, 3.8);
-        camera.lookAt(0, 0.2, 0);
+        camera.position.set(0, 0, 8);
 
         const renderer = new THREE.WebGLRenderer({
           antialias: true,
-          alpha: true,
+          alpha: false,
         });
-        renderer.setSize(width, height);
+        renderer.setSize(container.clientWidth, container.clientHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-        renderer.setClearColor(0x000000, 0);
         renderer.toneMapping = THREE.ACESFilmicToneMapping;
-        renderer.toneMappingExposure = 1.5;
-        renderer.shadowMap.enabled = true;
-        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        renderer.toneMappingExposure = 1.2;
         container.appendChild(renderer.domElement);
 
-        const controls = new OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
-        controls.enableZoom = false;
-        controls.enablePan = false;
-        controls.target.set(0, 0.2, 0);
-        controls.autoRotate = true;
-        controls.autoRotateSpeed = 1.2;
+        // Lights
+        const ambient = new THREE.AmbientLight(0x222244, 0.5);
+        scene.add(ambient);
 
-        // ===== LIGHTS =====
-        scene.add(new THREE.AmbientLight(0x88aaff, 0.8));
+        const key = new THREE.DirectionalLight(0x8aacff, 1.8);
+        key.position.set(2, 3, 4);
+        scene.add(key);
 
-        const keyLight = new THREE.DirectionalLight(0xfff5e6, 3.0);
-        keyLight.position.set(4, 6, 5);
-        keyLight.castShadow = true;
-        keyLight.shadow.mapSize.width = 1024;
-        keyLight.shadow.mapSize.height = 1024;
-        keyLight.shadow.bias = -0.001;
-        scene.add(keyLight);
+        const fill = new THREE.DirectionalLight(0x4466aa, 0.9);
+        fill.position.set(-3, 1, -2);
+        scene.add(fill);
 
-        const fillLight = new THREE.DirectionalLight(0x6699ff, 1.8);
-        fillLight.position.set(-4, 1, 3);
-        scene.add(fillLight);
+        const rim = new THREE.DirectionalLight(0x3a7cff, 2.0);
+        rim.position.set(-1, 0, -4);
+        scene.add(rim);
 
-        const rimLight = new THREE.DirectionalLight(0x4488ff, 1.5);
-        rimLight.position.set(0, 2, -6);
-        scene.add(rimLight);
+        const back = new THREE.DirectionalLight(0x6688cc, 0.6);
+        back.position.set(0, -1, -5);
+        scene.add(back);
 
-        const bottomLight = new THREE.DirectionalLight(0x4466aa, 0.8);
-        bottomLight.position.set(0, -3, 2);
-        scene.add(bottomLight);
-
-        const frontLight = new THREE.DirectionalLight(0xaaccff, 1.2);
-        frontLight.position.set(0, 0, 5);
-        scene.add(frontLight);
-
-        // Ground plane
-        const groundGeometry = new THREE.PlaneGeometry(3, 3);
-        const groundMaterial = new THREE.ShadowMaterial({
+        // floor shadow helper (invisible)
+        const planeGeo = new THREE.PlaneGeometry(10, 10);
+        const planeMat = new THREE.ShadowMaterial({
           opacity: 0.3,
           color: 0x000000,
-          blending: THREE.MultiplyBlending,
-          depthWrite: false,
         });
-        const ground = new THREE.Mesh(groundGeometry, groundMaterial);
-        ground.rotation.x = -Math.PI / 2;
-        ground.position.y = -1.35;
-        ground.receiveShadow = true;
-        scene.add(ground);
+        const plane = new THREE.Mesh(planeGeo, planeMat);
+        plane.rotation.x = -Math.PI / 2;
+        plane.position.y = -1.8;
+        plane.receiveShadow = true;
+        scene.add(plane);
 
         // Can group
-        const can = new THREE.Group();
-        can.rotation.x = -0.2;
-        can.rotation.z = 0.08;
-        can.position.y = 0.1;
-        scene.add(can);
+        const group = new THREE.Group();
+        scene.add(group);
 
-        // ===== SILVER MATERIALS =====
-        // Bright polished silver for top lid
-        const lidSilver = new THREE.MeshStandardMaterial({
-          color: 0xe8ecf0,
-          metalness: 0.98,
-          roughness: 0.06,
-          emissive: 0x224466,
-          emissiveIntensity: 0.03,
-        });
-
-        // Medium silver for rim
-        const rimSilver = new THREE.MeshStandardMaterial({
-          color: 0xd0d8e0,
-          metalness: 0.95,
-          roughness: 0.08,
-          emissive: 0x224466,
-          emissiveIntensity: 0.03,
-        });
-
-        // Darker silver for bottom
-        const bottomSilver = new THREE.MeshStandardMaterial({
-          color: 0x8a9aaa,
-          metalness: 0.9,
-          roughness: 0.15,
-          emissive: 0x112244,
-          emissiveIntensity: 0.02,
-        });
-
-        // ===== BODY (Blue/Can body) =====
+        // Create a realistic can with PBR (approximated with geometry + materials)
+        const bodyGeo = new THREE.CylinderGeometry(1.2, 1.2, 2.8, 48);
         const bodyMat = new THREE.MeshStandardMaterial({
-          color: 0x1a3a6a,
-          metalness: 0.6,
-          roughness: 0.25,
-          emissive: 0x2244aa,
-          emissiveIntensity: 0.08,
+          color: 0x1a2a5a,
+          metalness: 0.85,
+          roughness: 0.2,
+          envMapIntensity: 1.8,
+          emissive: 0x0a1a3a,
+          emissiveIntensity: 0.2,
         });
-        const body = new THREE.Mesh(
-          new THREE.CylinderGeometry(0.72, 0.72, 2.55, 64),
-          bodyMat,
-        );
+        const body = new THREE.Mesh(bodyGeo, bodyMat);
         body.castShadow = true;
         body.receiveShadow = true;
-        can.add(body);
+        body.position.y = 0;
+        group.add(body);
 
-        // ===== TOP LID (Silver) =====
-        // Main top lid surface
-        const topLid = new THREE.Mesh(
-          new THREE.CylinderGeometry(0.62, 0.62, 0.04, 64),
-          lidSilver,
-        );
-        topLid.position.y = 1.36;
-        topLid.castShadow = true;
-        can.add(topLid);
-
-        // Lid edge/rim (raised ring around the lid)
-        const lidEdge = new THREE.Mesh(
-          new THREE.TorusGeometry(0.62, 0.025, 16, 64),
-          rimSilver,
-        );
-        lidEdge.position.y = 1.38;
-        lidEdge.rotation.x = Math.PI / 2;
-        lidEdge.castShadow = true;
-        can.add(lidEdge);
-
-        // Inner lid ring (decorative)
-        const innerLidRing = new THREE.Mesh(
-          new THREE.TorusGeometry(0.5, 0.015, 16, 48),
-          rimSilver,
-        );
-        innerLidRing.position.y = 1.365;
-        innerLidRing.rotation.x = Math.PI / 2;
-        can.add(innerLidRing);
-
-        // ===== TOP RIM (Silver ring around the can top) =====
-        const topRim = new THREE.Mesh(
-          new THREE.TorusGeometry(0.72, 0.04, 16, 64),
-          rimSilver,
-        );
-        topRim.position.y = 1.31;
-        topRim.rotation.x = Math.PI / 2;
-        topRim.castShadow = true;
-        can.add(topRim);
-
-        // ===== BOTTOM (Silver) =====
-        // Bottom base
-        const bottom = new THREE.Mesh(
-          new THREE.CylinderGeometry(0.68, 0.72, 0.08, 64),
-          bottomSilver,
-        );
-        bottom.position.y = -1.325;
-        bottom.castShadow = true;
-        can.add(bottom);
-
-        // Bottom rim/edge
-        const bottomRim = new THREE.Mesh(
-          new THREE.TorusGeometry(0.7, 0.025, 16, 64),
-          bottomSilver,
-        );
-        bottomRim.position.y = -1.28;
-        bottomRim.rotation.x = Math.PI / 2;
-        bottomRim.castShadow = true;
-        can.add(bottomRim);
-
-        // ===== DECORATIVE RINGS (Middle of can) =====
-        const ringMat = new THREE.MeshStandardMaterial({
-          color: 0x99aabb,
-          metalness: 0.85,
+        // Top cap
+        const capGeo = new THREE.CylinderGeometry(1.0, 1.0, 0.15, 32);
+        const capMat = new THREE.MeshStandardMaterial({
+          color: 0x8888aa,
+          metalness: 0.9,
           roughness: 0.15,
-          emissive: 0x224488,
-          emissiveIntensity: 0.05,
+          envMapIntensity: 1.5,
         });
+        const cap = new THREE.Mesh(capGeo, capMat);
+        cap.position.y = 1.45;
+        cap.castShadow = true;
+        group.add(cap);
 
-        const ring1 = new THREE.Mesh(
-          new THREE.TorusGeometry(0.69, 0.015, 12, 48),
-          ringMat,
-        );
-        ring1.position.y = 0.9;
-        ring1.rotation.x = Math.PI / 2;
-        can.add(ring1);
+        // Label ring (blue stripe)
+        const ringGeo = new THREE.CylinderGeometry(1.22, 1.22, 0.4, 48);
+        const ringMat = new THREE.MeshStandardMaterial({
+          color: 0x2a4a8a,
+          metalness: 0.4,
+          roughness: 0.4,
+          emissive: 0x1a3a7a,
+          emissiveIntensity: 0.15,
+        });
+        const ring = new THREE.Mesh(ringGeo, ringMat);
+        ring.position.y = 0.3;
+        group.add(ring);
 
-        const ring2 = new THREE.Mesh(
-          new THREE.TorusGeometry(0.69, 0.015, 12, 48),
-          ringMat,
-        );
-        ring2.position.y = -0.8;
-        ring2.rotation.x = Math.PI / 2;
-        can.add(ring2);
+        // Silver stripe
+        const silverGeo = new THREE.CylinderGeometry(1.22, 1.22, 0.2, 48);
+        const silverMat = new THREE.MeshStandardMaterial({
+          color: 0xc0c8e0,
+          metalness: 0.95,
+          roughness: 0.1,
+          envMapIntensity: 2.0,
+        });
+        const silver = new THREE.Mesh(silverGeo, silverMat);
+        silver.position.y = -0.3;
+        group.add(silver);
 
-        // ===== LABEL WITH IMAGE =====
-        const textureLoader = new THREE.TextureLoader();
-
-        textureLoader.load(
-          "./label.png",
-          (texture) => {
-            texture.colorSpace = THREE.SRGBColorSpace;
-            texture.wrapS = THREE.RepeatWrapping;
-            texture.wrapT = THREE.ClampToEdgeWrapping;
-            texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
-
-            texture.repeat.set(0.48, 1);
-            texture.offset.set(0.0, 0);
-
-            const labelMat = new THREE.MeshStandardMaterial({
-              map: texture,
-              metalness: 0.2,
-              roughness: 0.3,
-              side: THREE.FrontSide,
-              emissive: 0x2244aa,
-              emissiveIntensity: 0.05,
-            });
-
-            const label = new THREE.Mesh(
-              new THREE.CylinderGeometry(0.73, 0.73, 2.35, 64, 1, true),
-              labelMat,
-            );
-            label.position.y = 0.02;
-            label.castShadow = true;
-            can.add(label);
-          },
-          undefined,
-          (err) => {
-            console.error("Failed to load label image:", err);
-            createFallbackLabel();
-          },
-        );
-
-        function createFallbackLabel() {
-          const canvas = document.createElement("canvas");
-          canvas.width = 512;
-          canvas.height = 1024;
-          const ctx = canvas.getContext("2d");
-
-          const grad = ctx.createLinearGradient(0, 0, 0, 1024);
-          grad.addColorStop(0, "#1a3a7a");
-          grad.addColorStop(0.3, "#2a5a9a");
-          grad.addColorStop(0.5, "#3a6aaa");
-          grad.addColorStop(0.7, "#2a5a9a");
-          grad.addColorStop(1, "#1a3a7a");
-          ctx.fillStyle = grad;
-          ctx.fillRect(0, 0, 512, 1024);
-
-          ctx.shadowColor = "rgba(100, 150, 255, 0.3)";
-          ctx.shadowBlur = 20;
-          ctx.fillStyle = "#ffffff";
-          ctx.textAlign = "center";
-          ctx.font = "bold 80px Arial";
-          ctx.fillText("FAST", 256, 400);
-          ctx.fillStyle = "#aaccee";
-          ctx.font = "bold 70px Arial";
-          ctx.fillText("TRACK", 256, 500);
-          ctx.fillStyle = "#88bbdd";
-          ctx.font = "40px Arial";
-          ctx.fillText("PREMIUM", 256, 590);
-          ctx.shadowBlur = 0;
-
-          ctx.fillStyle = "#66aaff";
-          ctx.shadowColor = "rgba(100, 150, 255, 0.5)";
-          ctx.shadowBlur = 30;
-          ctx.beginPath();
-          ctx.moveTo(240, 680);
-          ctx.lineTo(260, 680);
-          ctx.lineTo(250, 720);
-          ctx.lineTo(270, 720);
-          ctx.lineTo(230, 790);
-          ctx.lineTo(245, 740);
-          ctx.lineTo(225, 740);
-          ctx.closePath();
-          ctx.fill();
-          ctx.shadowBlur = 0;
-
-          const shineGrad = ctx.createLinearGradient(0, 0, 512, 0);
-          shineGrad.addColorStop(0, "rgba(255,255,255,0)");
-          shineGrad.addColorStop(0.4, "rgba(255,255,255,0.05)");
-          shineGrad.addColorStop(0.5, "rgba(255,255,255,0.08)");
-          shineGrad.addColorStop(0.6, "rgba(255,255,255,0.05)");
-          shineGrad.addColorStop(1, "rgba(255,255,255,0)");
-          ctx.fillStyle = shineGrad;
-          ctx.fillRect(0, 0, 512, 1024);
-
-          const texture = new THREE.CanvasTexture(canvas);
-          texture.colorSpace = THREE.SRGBColorSpace;
-
-          const labelMat = new THREE.MeshStandardMaterial({
-            map: texture,
-            metalness: 0.2,
-            roughness: 0.3,
-            emissive: 0x2244aa,
-            emissiveIntensity: 0.05,
-          });
-
-          const label = new THREE.Mesh(
-            new THREE.CylinderGeometry(0.73, 0.73, 2.35, 64, 1, true),
-            labelMat,
-          );
-          label.position.y = 0.02;
-          can.add(label);
-        }
-
-        // ===== SHADOWS =====
-        const shadowGeometry = new THREE.CircleGeometry(0.9, 32);
-        const shadowMaterial = new THREE.MeshBasicMaterial({
-          color: 0x000000,
+        // Emissive glow ring (blue)
+        const glowGeo = new THREE.CylinderGeometry(1.25, 1.25, 0.05, 48);
+        const glowMat = new THREE.MeshStandardMaterial({
+          color: 0x3a7cff,
+          emissive: 0x3a7cff,
+          emissiveIntensity: 0.6,
           transparent: true,
-          opacity: 0.2,
-          depthWrite: false,
-          side: THREE.DoubleSide,
+          opacity: 0.3,
         });
-        const shadowDisc = new THREE.Mesh(shadowGeometry, shadowMaterial);
-        shadowDisc.rotation.x = -Math.PI / 2;
-        shadowDisc.position.set(0, -1.38, 0.1);
-        scene.add(shadowDisc);
+        const glowRing = new THREE.Mesh(glowGeo, glowMat);
+        glowRing.position.y = 0.8;
+        group.add(glowRing);
 
-        const softShadowGeometry = new THREE.CircleGeometry(1.2, 32);
-        const softShadowMaterial = new THREE.MeshBasicMaterial({
-          color: 0x000000,
-          transparent: true,
-          opacity: 0.08,
-          depthWrite: false,
-          side: THREE.DoubleSide,
-        });
-        const softShadow = new THREE.Mesh(
-          softShadowGeometry,
-          softShadowMaterial,
-        );
-        softShadow.rotation.x = -Math.PI / 2;
-        softShadow.position.set(0, -1.37, 0.05);
-        scene.add(softShadow);
+        // Floating animation
+        let time = 0;
 
         function animate() {
           requestAnimationFrame(animate);
-          controls.update();
+          time += 0.01;
+          group.rotation.y += 0.003;
+          group.position.y = Math.sin(time * 0.6) * 0.04;
+          group.rotation.x = Math.sin(time * 0.2) * 0.02;
+          group.rotation.z = Math.cos(time * 0.3) * 0.01;
+
+          // mouse parallax (simple)
+          if (window.mouseX !== undefined) {
+            const mx = (window.mouseX - 0.5) * 0.4;
+            const my = (window.mouseY - 0.5) * 0.2;
+            group.rotation.y += mx * 0.003;
+            group.rotation.x += my * 0.003;
+          }
+
           renderer.render(scene, camera);
         }
         animate();
 
-        window.addEventListener("resize", () => {
+        // resize
+        function resize() {
           const w = container.clientWidth;
           const h = container.clientHeight;
-          if (w && h) {
-            camera.aspect = w / h;
-            camera.updateProjectionMatrix();
-            renderer.setSize(w, h);
-          }
+          camera.aspect = w / h;
+          camera.updateProjectionMatrix();
+          renderer.setSize(w, h);
+        }
+        window.addEventListener("resize", resize);
+
+        // mouse tracking
+        window.mouseX = 0.5;
+        window.mouseY = 0.5;
+        document.addEventListener("mousemove", (e) => {
+          window.mouseX = e.clientX / window.innerWidth;
+          window.mouseY = e.clientY / window.innerHeight;
+        });
+
+        // clean up on page hide (optional)
+        window.addEventListener("beforeunload", () => {
+          renderer.dispose();
         });
       }
-    </script>
+    })();
 
-    <!-- Particle System Script -->
-    <script>
-      (function () {
-        const canvas = document.getElementById("particle-canvas");
-        if (!canvas) return;
+    document.addEventListener("DOMContentLoaded", function () {
 
-        const ctx = canvas.getContext("2d");
-        let width, height;
-        let particles = [];
-        const PARTICLE_COUNT = 100;
-        const MAX_SPEED = 0.5;
+      // ==========================================
+      // NAVBAR
+      // ==========================================
 
-        function resize() {
-          const parent = canvas.parentElement;
-          width = parent.offsetWidth;
-          height = parent.offsetHeight;
-          canvas.width = width;
-          canvas.height = height;
-        }
+      const navbar = document.getElementById("navbar");
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
+      const desktopLinks = document.querySelectorAll(".nav-links a");
+      const body = document.body;
 
-        function createParticle() {
-          return {
-            x: Math.random() * width,
-            y: Math.random() * height,
-            size: Math.random() * 2.5 + 1.5,
-            speedX: (Math.random() - 0.5) * MAX_SPEED * 2,
-            speedY: (Math.random() - 0.5) * MAX_SPEED * 2,
-            opacity: Math.random() * 0.4 + 0.2,
-            twinkle: Math.random() * Math.PI * 2,
-            twinkleSpeed: 0.02 + Math.random() * 0.03,
-          };
-        }
+      // ------------------------------------------
+      // Safety check
+      // ------------------------------------------
 
-        function initParticles() {
-          particles = [];
-          for (let i = 0; i < PARTICLE_COUNT; i++) {
-            particles.push(createParticle());
-          }
-        }
-
-        function drawParticle(p) {
-          const twinkle = Math.sin(p.twinkle) * 0.3 + 0.7;
-          const opacity = p.opacity * twinkle;
-
-          const gradient = ctx.createRadialGradient(
-            p.x,
-            p.y,
-            0,
-            p.x,
-            p.y,
-            p.size * 3,
-          );
-          gradient.addColorStop(0, `rgba(100, 180, 255, ${opacity * 0.8})`);
-          gradient.addColorStop(0.3, `rgba(60, 140, 255, ${opacity * 0.4})`);
-          gradient.addColorStop(1, `rgba(30, 80, 200, 0)`);
-
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.size * 3, 0, Math.PI * 2);
-          ctx.fillStyle = gradient;
-          ctx.fill();
-
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.size * 0.6, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(180, 220, 255, ${opacity * 0.9})`;
-          ctx.fill();
-
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.size * 0.2, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(255, 255, 255, ${opacity * 0.6})`;
-          ctx.fill();
-        }
-
-        function drawConnections() {
-          for (let i = 0; i < particles.length; i++) {
-            for (let j = i + 1; j < particles.length; j++) {
-              const dx = particles[i].x - particles[j].x;
-              const dy = particles[i].y - particles[j].y;
-              const dist = Math.sqrt(dx * dx + dy * dy);
-
-              if (dist < 150) {
-                const opacity = (1 - dist / 150) * 0.12;
-                ctx.beginPath();
-                ctx.moveTo(particles[i].x, particles[i].y);
-                ctx.lineTo(particles[j].x, particles[j].y);
-                ctx.strokeStyle = `rgba(100, 180, 255, ${opacity})`;
-                ctx.lineWidth = 0.5;
-                ctx.stroke();
-              }
-            }
-          }
-        }
-
-        function animateParticles() {
-          ctx.clearRect(0, 0, width, height);
-
-          for (const p of particles) {
-            p.x += p.speedX;
-            p.y += p.speedY;
-            p.twinkle += p.twinkleSpeed;
-
-            if (p.x < 0 || p.x > width) {
-              p.speedX *= -1;
-              p.x = Math.max(0, Math.min(width, p.x));
-            }
-            if (p.y < 0 || p.y > height) {
-              p.speedY *= -1;
-              p.y = Math.max(0, Math.min(height, p.y));
-            }
-
-            drawParticle(p);
-          }
-
-          drawConnections();
-          requestAnimationFrame(animateParticles);
-        }
-
-        window.addEventListener("resize", () => {
-          resize();
-          for (const p of particles) {
-            p.x = Math.min(width, p.x);
-            p.y = Math.min(height, p.y);
-          }
-        });
-
-        window.addEventListener("orientationchange", () => {
-          setTimeout(resize, 300);
-        });
-
-        resize();
-        initParticles();
-        animateParticles();
-
-        document.addEventListener("visibilitychange", () => {
-          if (!document.hidden) {
-            resize();
-          }
-        });
-      })();
-    </script>
-
-    <!-- Product - Blue Theme (Fully Responsive) -->
-    <section class="relative bg-[#060d1a] py-6 px-4 overflow-hidden">
-      <!-- Large Outline Brand Name -->
-      <div
-        class="absolute top-8 left-1/2 -translate-x-1/2 text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] xl:text-[7vw] bungee-shade uppercase leading-none tracking-[-0.06em] pointer-events-none select-none z-0 outline-text whitespace-nowrap"
-      >
-        FAST TRACK
-      </div>
-
-      <!-- Soft blue glows -->
-      <div
-        class="absolute top-1/2 left-1/3 -translate-y-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none"
-      ></div>
-      <div
-        class="absolute bottom-0 right-1/4 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-cyan-500/5 rounded-full blur-[100px] pointer-events-none"
-      ></div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        <div class="grid lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10 items-center">
-          <!-- Left Content -->
-          <div
-            class="lg:col-span-4 space-y-3 sm:space-y-4 md:space-y-5 text-center lg:text-left"
-          >
-            <!-- Eyebrow -->
-            <p
-              class="text-cyan-400 text-[10px] sm:text-xs uppercase tracking-[0.25em] sm:tracking-[0.35em] font-semibold"
-            >
-              POWER • PERFORMANCE • FOCUS
-            </p>
-
-            <!-- Heading -->
-            <h2
-              class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bungee font-black leading-[0.9] tracking-tight"
-            >
-              <span class="text-white">FAST</span>
-              <span
-                class="bg-gradient-to-r from-blue-400 via-cyan-300 to-white bg-clip-text text-transparent"
-              >
-                TRACK
-              </span>
-            </h2>
-
-            <!-- Description -->
-            <p
-              class="max-w-sm mx-auto lg:mx-0 text-blue-100/65 text-sm sm:text-base leading-6 sm:leading-7"
-            >
-              Built for those who never slow down, FAST TRACK delivers a
-              refreshing boost with every sip anytime, anywhere.
-            </p>
-
-            <!-- Action Buttons -->
-            <div
-              class="flex flex-wrap gap-3 justify-center lg:justify-start pt-3"
-            >
-              <button
-                onclick="openBulkOrder()"
-                class="px-5 py-2.5 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-sm font-bold hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300 flex items-center gap-2"
-              >
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-                Bulk Order
-              </button>
-              <button
-                class="px-5 py-2.5 rounded-lg bg-white/10 backdrop-blur-sm text-white text-sm font-bold border border-white/20 hover:bg-white/20 transition-all duration-300"
-              >
-                Buy Now
-              </button>
-            </div>
-          </div>
-
-          <!-- Center - Product Can -->
-          <div class="lg:col-span-4 flex justify-center items-center relative">
-            <!-- Animated Glow -->
-            <div
-              class="absolute inset-0 flex items-center justify-center pointer-events-none"
-            >
-              <div
-                class="hero-glow w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse"
-              ></div>
-            </div>
-
-            <!-- Can -->
-            <div class="hero-can relative z-10 w-48 sm:w-56 md:w-64 lg:w-72">
-              <img
-                src="/can.png"
-                alt="Fast Track Premium Energy Drink"
-                class="w-full h-auto"
-              />
-            </div>
-          </div>
-
-          <!-- Right - Lifestyle circle -->
-          <div class="lg:col-span-4 flex justify-center lg:justify-end">
-            <div class="relative">
-              <!-- Decorative dots -->
-              <div
-                class="absolute -top-6 sm:-top-8 md:-top-10 -left-6 sm:-left-8 md:-left-10 grid grid-cols-5 gap-2 sm:gap-3 opacity-30"
-              >
-                <div
-                  class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"
-                ></div>
-                <div
-                  class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"
-                ></div>
-                <div
-                  class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"
-                ></div>
-                <div
-                  class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"
-                ></div>
-                <div
-                  class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"
-                ></div>
-                <div
-                  class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"
-                ></div>
-                <div
-                  class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"
-                ></div>
-                <div
-                  class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"
-                ></div>
-                <div
-                  class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"
-                ></div>
-                <div
-                  class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-blue-400"
-                ></div>
-              </div>
-
-              <div
-                class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-[4px] sm:border-[5px] md:border-[6px] border-blue-500/20 shadow-[0_0_40px_rgba(59,130,246,0.1)] sm:shadow-[0_0_50px_rgba(59,130,246,0.12)] md:shadow-[0_0_60px_rgba(59,130,246,0.15)]"
-              >
-                <img
-                  src="/can2.png"
-                  alt="Fast Track"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== BULK ORDER OVERLAY ===== -->
-    <div
-      id="bulkOrderOverlay"
-      class="fixed inset-0 z-[9999] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-400"
-    >
-      <!-- Backdrop -->
-      <div
-        class="absolute inset-0 bg-black/80 backdrop-blur-md"
-        onclick="closeBulkOrder()"
-      ></div>
-
-      <!-- Modal -->
-      <div
-        class="relative w-full max-w-lg bg-gradient-to-br from-[#0a1628] to-[#060d1a] rounded-2xl border border-blue-500/20 shadow-[0_0_80px_rgba(59,130,246,0.15)] p-6 sm:p-8 transform scale-95 transition-all duration-400"
-      >
-        <!-- Close Button -->
-        <button
-          onclick="closeBulkOrder()"
-          class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
-        >
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-
-        <!-- Header -->
-        <div class="text-center mb-6">
-          <div
-            class="inline-flex items-center gap-2 text-blue-400 text-xs font-semibold tracking-widest uppercase mb-2"
-          >
-            <span class="w-8 h-px bg-blue-400/50"></span>
-            BULK ORDER
-            <span class="w-8 h-px bg-blue-400/50"></span>
-          </div>
-          <h3 class="text-2xl font-bold text-white">Choose Your Pack</h3>
-          <p class="text-sm text-blue-100/50 mt-1">
-            Select pack size and quantity
-          </p>
-        </div>
-
-        <!-- Pack Selection -->
-        <div class="grid grid-cols-3 gap-3 mb-6">
-          <button
-            onclick="selectPack(6)"
-            data-pack="6"
-            class="pack-btn relative p-4 rounded-xl bg-white/5 border-2 border-white/10 hover:border-blue-500/50 transition-all duration-300 group text-center"
-          >
-            <div class="text-2xl mb-1">📦</div>
-            <div class="text-white font-bold text-sm">6 Pack</div>
-            <div class="text-blue-300/60 text-xs">6 cans</div>
-            <div
-              class="absolute inset-0 rounded-xl bg-blue-500/0 group-hover:bg-blue-500/5 transition-all duration-300"
-            ></div>
-          </button>
-          <button
-            onclick="selectPack(12)"
-            data-pack="12"
-            class="pack-btn relative p-4 rounded-xl bg-white/5 border-2 border-white/10 hover:border-blue-500/50 transition-all duration-300 group text-center"
-          >
-            <div class="text-2xl mb-1">📦</div>
-            <div class="text-white font-bold text-sm">12 Pack</div>
-            <div class="text-blue-300/60 text-xs">12 cans</div>
-            <div
-              class="absolute inset-0 rounded-xl bg-blue-500/0 group-hover:bg-blue-500/5 transition-all duration-300"
-            ></div>
-          </button>
-          <button
-            onclick="selectPack(24)"
-            data-pack="24"
-            class="pack-btn relative p-4 rounded-xl bg-white/5 border-2 border-white/10 hover:border-blue-500/50 transition-all duration-300 group text-center"
-          >
-            <div class="text-2xl mb-1">📦</div>
-            <div class="text-white font-bold text-sm">24 Pack</div>
-            <div class="text-blue-300/60 text-xs">24 cans</div>
-            <div
-              class="absolute inset-0 rounded-xl bg-blue-500/0 group-hover:bg-blue-500/5 transition-all duration-300"
-            ></div>
-          </button>
-        </div>
-
-        <!-- Quantity Control -->
-        <div class="bg-white/5 rounded-xl p-4 mb-6">
-          <div class="flex items-center justify-between">
-            <span class="text-sm text-blue-100/60">Quantity</span>
-            <div class="flex items-center gap-3">
-              <button
-                onclick="updateQuantity(-1)"
-                class="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 text-white text-lg font-bold transition-colors flex items-center justify-center"
-              >
-                −
-              </button>
-              <span
-                id="quantityDisplay"
-                class="text-xl font-bold text-white min-w-[32px] text-center"
-                >1</span
-              >
-              <button
-                onclick="updateQuantity(1)"
-                class="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 text-white text-lg font-bold transition-colors flex items-center justify-center"
-              >
-                +
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Order Summary -->
-        <div
-          class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-xl p-4 mb-6 border border-blue-500/10"
-        >
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-sm text-blue-100/60">Selected Pack</span>
-            <span
-              id="selectedPackDisplay"
-              class="text-sm font-semibold text-white"
-              >12 Pack</span
-            >
-          </div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-sm text-blue-100/60">Quantity</span>
-            <span
-              id="selectedQuantityDisplay"
-              class="text-sm font-semibold text-white"
-              >× 1</span
-            >
-          </div>
-          <div
-            class="border-t border-blue-500/20 pt-2 flex items-center justify-between"
-          >
-            <span class="text-sm font-bold text-white">Total Cans</span>
-            <span
-              id="totalCansDisplay"
-              class="text-xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text"
-              >12</span
-            >
-          </div>
-        </div>
-
-        <!-- Actions -->
-        <div class="flex gap-3">
-          <button
-            onclick="closeBulkOrder()"
-            class="flex-1 px-4 py-2.5 rounded-lg bg-white/5 text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-300 text-sm font-medium"
-          >
-            Cancel
-          </button>
-          <button
-            onclick="continueOrder()"
-            class="flex-1 px-4 py-2.5 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300 text-sm"
-          >
-            Continue Order
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <style>
-      /* Bulk Order Overlay Styles */
-      #bulkOrderOverlay {
-        transition:
-          opacity 0.4s ease,
-          visibility 0.4s ease;
+      if (!navbar) {
+        console.warn("Navbar element not found.");
+        return;
       }
 
-      #bulkOrderOverlay.active {
-        opacity: 1;
-        pointer-events: all;
-      }
+      // ------------------------------------------
+      // Navbar scroll effect
+      // ------------------------------------------
 
-      #bulkOrderOverlay.active .relative {
-        transform: scale(1);
-      }
-
-      #bulkOrderOverlay .relative {
-        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-      }
-
-      .pack-btn.active {
-        border-color: #3b82f6;
-        background: rgba(59, 130, 246, 0.15);
-        box-shadow: 0 0 30px rgba(59, 130, 246, 0.15);
-      }
-
-      .pack-btn.active .text-white {
-        color: #60a5fa;
-      }
-    </style>
-
-    <!-- Distributor + Careers -->
-    <section
-      id="distributor"
-      class="bg-[#080808] py-12 sm:py-16 relative overflow-hidden"
-    >
-      <div
-        class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(37,99,235,.18),transparent_30%),radial-gradient(circle_at_80%_80%,rgba(6,182,212,.12),transparent_30%),linear-gradient(180deg,#081321,#040810,#020306)]"
-      ></div>
-      <div
-        class="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-[120px] pointer-events-none"
-      ></div>
-
-      <div
-        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-6 relative z-10"
-      >
-        <!-- Distributor Card -->
-        <div
-          class="relative rounded-3xl p-[1px] bg-gradient-to-br from-white/40 via-blue-400/20 to-white/10 shadow-[0_25px_70px_rgba(0,0,0,.45)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_35px_80px_rgba(37,99,235,.25)]"
-        >
-          <div
-            class="absolute -inset-8 rounded-[40px] bg-blue-500/10 blur-3xl opacity-0 group-hover:opacity-100 transition duration-700"
-          ></div>
-
-          <div
-            class="relative h-full rounded-[22px] overflow-hidden bg-gradient-to-br from-[#0c1222]/90 to-[#05080f]/95 backdrop-blur-xl border border-white/10"
-          >
-            <div
-              class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-white/35 to-transparent"
-            ></div>
-
-            <div class="p-6 sm:p-8 md:p-10">
-              <h2
-                class="text-2xl sm:text-3xl font-semibold font-light text-white mb-2"
-              >
-                Become a Distributor
-              </h2>
-              <p class="text-white/50 text-sm mb-6 sm:mb-8">
-                Premium partnership. Exclusive territories.
-              </p>
-
-              <form id="distributor-form" class="space-y-4 sm:space-y-5">
-                <div>
-                  <label
-                    class="block text-xs font-medium text-blue-300/80 mb-1.5 tracking-wide"
-                    >Full name</label
-                  >
-                  <input
-                    name="full_name"
-                    type="text"
-                    required
-                    class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-blue-400/40 focus:ring-1 focus:ring-blue-400/20 transition"
-                    placeholder="James Hunt"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    class="block text-xs font-medium text-blue-300/80 mb-1.5 tracking-wide"
-                    >Email</label
-                  >
-                  <input
-                    name="email"
-                    type="email"
-                    required
-                    class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-blue-400/40 focus:ring-1 focus:ring-blue-400/20 transition"
-                    placeholder="james@fasttrack.com"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    class="block text-xs font-medium text-blue-300/80 mb-1.5 tracking-wide"
-                    >Company</label
-                  >
-                  <input
-                    name="company"
-                    type="text"
-                    class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-blue-400/40 focus:ring-1 focus:ring-blue-400/20 transition"
-                    placeholder="Motorsport Ltd."
-                  />
-                </div>
-
-                <button type="submit" class="liquid-btn w-full mt-4">
-                  Apply now
-                </button>
-
-                <div id="distributor-message" class="text-sm mt-3 hidden"></div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <!-- Careers Card -->
-        <div
-          class="relative rounded-3xl p-[1px] bg-gradient-to-br from-white/40 via-blue-400/20 to-white/10 shadow-[0_25px_70px_rgba(0,0,0,.45)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_35px_80px_rgba(37,99,235,.25)]"
-        >
-          <div
-            class="relative h-full rounded-[22px] overflow-hidden bg-gradient-to-br from-[#0c1222]/90 to-[#05080f]/95 backdrop-blur-xl border border-white/10"
-          >
-            <div
-              class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-white/35 to-transparent"
-            ></div>
-
-            <div class="p-6 sm:p-8 md:p-10">
-              <h2
-                class="text-2xl sm:text-3xl font-semibold font-light text-white mb-2"
-              >
-                Join Our Team
-              </h2>
-              <p class="text-white/50 text-sm mb-6 sm:mb-8">
-                Performance-driven culture. Global impact.
-              </p>
-
-              <form id="careers-form" class="space-y-4 sm:space-y-5">
-                <div>
-                  <label
-                    class="block text-xs font-medium text-blue-300/80 mb-1.5 tracking-wide"
-                    >Full name</label
-                  >
-                  <input
-                    name="full_name"
-                    type="text"
-                    required
-                    class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-blue-400/40 focus:ring-1 focus:ring-blue-400/20 transition"
-                    placeholder="Ayrton Senna"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    class="block text-xs font-medium text-blue-300/80 mb-1.5 tracking-wide"
-                    >Email</label
-                  >
-                  <input
-                    name="email"
-                    type="email"
-                    required
-                    class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-blue-400/40 focus:ring-1 focus:ring-blue-400/20 transition"
-                    placeholder="ayrton@fasttrack.com"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    class="block text-xs font-medium text-blue-300/80 mb-1.5 tracking-wide"
-                    >Role interest</label
-                  >
-                  <input
-                    name="role"
-                    type="text"
-                    class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-blue-400/40 focus:ring-1 focus:ring-blue-400/20 transition"
-                    placeholder="Brand strategist"
-                  />
-                </div>
-
-                <button type="submit" class="liquid-btn w-full mt-4">
-                  Send application
-                </button>
-
-                <div id="careers-message" class="text-sm mt-3 hidden"></div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="relative border-t border-white/5 bg-[#050505] py-5 px-6">
-      <div
-        class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent"
-      ></div>
-
-      <div
-        class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm"
-      >
-        <!-- Logo -->
-        <div class="text-sm tracking-wide">
-          <span class="text-white font-semibold">FAST</span
-          ><span class="text-blue-300/70 font-light">TRACK</span>
-        </div>
-
-        <!-- Social Links -->
-        <div class="flex items-center gap-5">
-          <!-- Instagram -->
-          <a
-            href="#"
-            class="text-[#606880] hover:text-blue-400 transition-colors duration-300"
-            aria-label="Instagram"
-          >
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
-              />
-            </svg>
-          </a>
-
-          <!-- X (Twitter) -->
-          <a
-            href="#"
-            class="text-[#606880] hover:text-blue-400 transition-colors duration-300"
-            aria-label="X"
-          >
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-              />
-            </svg>
-          </a>
-
-          <!-- YouTube -->
-          <a
-            href="#"
-            class="text-[#606880] hover:text-blue-400 transition-colors duration-300"
-            aria-label="YouTube"
-          >
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-              />
-            </svg>
-          </a>
-        </div>
-
-        <!-- Copyright -->
-        <div class="text-[#606880] text-xs sm:text-sm">
-          © 2026 · Premium Energy
-        </div>
-      </div>
-    </footer>
-
-    <!-- GSAP + Lenis + Three.js init -->
-    <script>
-      (function () {
-        // Lenis smooth scroll
-        const lenis = new Lenis({
-          duration: 1.2,
-          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        });
-        function raf(time) {
-          lenis.raf(time);
-          requestAnimationFrame(raf);
+      function handleNavbarScroll() {
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
         }
-        requestAnimationFrame(raf);
+      }
 
-        // nav scroll
-        const nav = document.getElementById("navbar");
-        window.addEventListener("scroll", () => {
-          if (window.scrollY > 40) nav.classList.add("scrolled");
-          else nav.classList.remove("scrolled");
-        });
+      window.addEventListener("scroll", handleNavbarScroll);
+      handleNavbarScroll();
 
-        // GSAP + ScrollTrigger
-        gsap.registerPlugin(ScrollTrigger);
 
-        // Hero split text
-        const headline = document.getElementById("hero-headline");
-        if (headline) {
-          const split = new SplitType(headline, { types: "words,chars" });
-          gsap.from(split.chars, {
-            opacity: 0,
-            y: 60,
-            duration: 1.2,
-            ease: "power4.out",
-            stagger: 0.04,
-            delay: 0.6,
-          });
-        }
+      // ==========================================
+      // MOBILE MENU
+      // ==========================================
 
-        // Hero buttons
-        gsap.from(".hero-cta .btn-premium", {
-          opacity: 0,
-          y: 40,
-          duration: 1,
-          ease: "power4.out",
-          stagger: 0.15,
-          delay: 1.2,
-        });
+      if (hamburgerBtn && mobileMenu) {
 
-        // Showcase can
-        gsap.from("#showcase-can", {
-          opacity: 0,
-          scale: 0.9,
-          duration: 1.2,
-          ease: "expo.out",
-          scrollTrigger: { trigger: "#showcase", start: "top 80%" },
-        });
+        const hamburgerLines =
+          hamburgerBtn.querySelectorAll(".hamburger-line");
 
-        // Feature cards stagger
-        gsap.from(".feature-item", {
-          opacity: 0,
-          y: 30,
-          duration: 0.8,
-          ease: "power3.out",
-          stagger: 0.1,
-          scrollTrigger: { trigger: "#showcase", start: "top 60%" },
-        });
 
-        // Feature cards (3 columns)
-        gsap.from(".feature-card", {
-          opacity: 0,
-          y: 40,
-          duration: 0.9,
-          ease: "power4.out",
-          stagger: 0.15,
-          scrollTrigger: { trigger: ".feature-card", start: "top 85%" },
-        });
-
-        // Energy chamber pin
-        ScrollTrigger.create({
-          trigger: "#energy-chamber",
-          start: "top top",
-          end: "bottom bottom",
-          pin: true,
-          pinSpacing: true,
-          scrub: 1,
-        });
-
-        // reveal class observer
-        const reveals = document.querySelectorAll(".reveal");
-        const obs = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((e) => {
-              if (e.isIntersecting) e.target.classList.add("visible");
-            });
-          },
-          { threshold: 0.2 },
-        );
-        reveals.forEach((el) => obs.observe(el));
-
-        // ----- Three.js hero (simple PBR can with reflections) -----
-        const container = document.getElementById("hero-canvas");
-        if (container) {
-          const scene = new THREE.Scene();
-          scene.background = new THREE.Color(0x050505);
-
-          const camera = new THREE.PerspectiveCamera(
-            40,
-            container.clientWidth / container.clientHeight,
-            0.1,
-            100,
-          );
-          camera.position.set(0, 0, 8);
-
-          const renderer = new THREE.WebGLRenderer({
-            antialias: true,
-            alpha: false,
-          });
-          renderer.setSize(container.clientWidth, container.clientHeight);
-          renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-          renderer.toneMapping = THREE.ACESFilmicToneMapping;
-          renderer.toneMappingExposure = 1.2;
-          container.appendChild(renderer.domElement);
-
-          // Lights
-          const ambient = new THREE.AmbientLight(0x222244, 0.5);
-          scene.add(ambient);
-
-          const key = new THREE.DirectionalLight(0x8aacff, 1.8);
-          key.position.set(2, 3, 4);
-          scene.add(key);
-
-          const fill = new THREE.DirectionalLight(0x4466aa, 0.9);
-          fill.position.set(-3, 1, -2);
-          scene.add(fill);
-
-          const rim = new THREE.DirectionalLight(0x3a7cff, 2.0);
-          rim.position.set(-1, 0, -4);
-          scene.add(rim);
-
-          const back = new THREE.DirectionalLight(0x6688cc, 0.6);
-          back.position.set(0, -1, -5);
-          scene.add(back);
-
-          // floor shadow helper (invisible)
-          const planeGeo = new THREE.PlaneGeometry(10, 10);
-          const planeMat = new THREE.ShadowMaterial({
-            opacity: 0.3,
-            color: 0x000000,
-          });
-          const plane = new THREE.Mesh(planeGeo, planeMat);
-          plane.rotation.x = -Math.PI / 2;
-          plane.position.y = -1.8;
-          plane.receiveShadow = true;
-          scene.add(plane);
-
-          // Can group
-          const group = new THREE.Group();
-          scene.add(group);
-
-          // Create a realistic can with PBR (approximated with geometry + materials)
-          const bodyGeo = new THREE.CylinderGeometry(1.2, 1.2, 2.8, 48);
-          const bodyMat = new THREE.MeshStandardMaterial({
-            color: 0x1a2a5a,
-            metalness: 0.85,
-            roughness: 0.2,
-            envMapIntensity: 1.8,
-            emissive: 0x0a1a3a,
-            emissiveIntensity: 0.2,
-          });
-          const body = new THREE.Mesh(bodyGeo, bodyMat);
-          body.castShadow = true;
-          body.receiveShadow = true;
-          body.position.y = 0;
-          group.add(body);
-
-          // Top cap
-          const capGeo = new THREE.CylinderGeometry(1.0, 1.0, 0.15, 32);
-          const capMat = new THREE.MeshStandardMaterial({
-            color: 0x8888aa,
-            metalness: 0.9,
-            roughness: 0.15,
-            envMapIntensity: 1.5,
-          });
-          const cap = new THREE.Mesh(capGeo, capMat);
-          cap.position.y = 1.45;
-          cap.castShadow = true;
-          group.add(cap);
-
-          // Label ring (blue stripe)
-          const ringGeo = new THREE.CylinderGeometry(1.22, 1.22, 0.4, 48);
-          const ringMat = new THREE.MeshStandardMaterial({
-            color: 0x2a4a8a,
-            metalness: 0.4,
-            roughness: 0.4,
-            emissive: 0x1a3a7a,
-            emissiveIntensity: 0.15,
-          });
-          const ring = new THREE.Mesh(ringGeo, ringMat);
-          ring.position.y = 0.3;
-          group.add(ring);
-
-          // Silver stripe
-          const silverGeo = new THREE.CylinderGeometry(1.22, 1.22, 0.2, 48);
-          const silverMat = new THREE.MeshStandardMaterial({
-            color: 0xc0c8e0,
-            metalness: 0.95,
-            roughness: 0.1,
-            envMapIntensity: 2.0,
-          });
-          const silver = new THREE.Mesh(silverGeo, silverMat);
-          silver.position.y = -0.3;
-          group.add(silver);
-
-          // Emissive glow ring (blue)
-          const glowGeo = new THREE.CylinderGeometry(1.25, 1.25, 0.05, 48);
-          const glowMat = new THREE.MeshStandardMaterial({
-            color: 0x3a7cff,
-            emissive: 0x3a7cff,
-            emissiveIntensity: 0.6,
-            transparent: true,
-            opacity: 0.3,
-          });
-          const glowRing = new THREE.Mesh(glowGeo, glowMat);
-          glowRing.position.y = 0.8;
-          group.add(glowRing);
-
-          // Floating animation
-          let time = 0;
-
-          function animate() {
-            requestAnimationFrame(animate);
-            time += 0.01;
-            group.rotation.y += 0.003;
-            group.position.y = Math.sin(time * 0.6) * 0.04;
-            group.rotation.x = Math.sin(time * 0.2) * 0.02;
-            group.rotation.z = Math.cos(time * 0.3) * 0.01;
-
-            // mouse parallax (simple)
-            if (window.mouseX !== undefined) {
-              const mx = (window.mouseX - 0.5) * 0.4;
-              const my = (window.mouseY - 0.5) * 0.2;
-              group.rotation.y += mx * 0.003;
-              group.rotation.x += my * 0.003;
-            }
-
-            renderer.render(scene, camera);
-          }
-          animate();
-
-          // resize
-          function resize() {
-            const w = container.clientWidth;
-            const h = container.clientHeight;
-            camera.aspect = w / h;
-            camera.updateProjectionMatrix();
-            renderer.setSize(w, h);
-          }
-          window.addEventListener("resize", resize);
-
-          // mouse tracking
-          window.mouseX = 0.5;
-          window.mouseY = 0.5;
-          document.addEventListener("mousemove", (e) => {
-            window.mouseX = e.clientX / window.innerWidth;
-            window.mouseY = e.clientY / window.innerHeight;
-          });
-
-          // clean up on page hide (optional)
-          window.addEventListener("beforeunload", () => {
-            renderer.dispose();
-          });
-        }
-      })();
-
-      document.addEventListener("DOMContentLoaded", function () {
-        // ===== NAVBAR SCROLL EFFECT =====
-        const navbar = document.getElementById("navbar");
-
-        window.addEventListener("scroll", function () {
-          if (window.scrollY > 50) {
-            navbar.classList.add("scrolled");
-          } else {
-            navbar.classList.remove("scrolled");
-          }
-        });
-
-        // ===== HAMBURGER MENU TOGGLE =====
-        const hamburgerBtn = document.getElementById("hamburger-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const closeBtn = document.getElementById("close-menu");
-        const mobileLinks = document.querySelectorAll(".mobile-link");
-        const body = document.body;
+        // ----------------------------------------
+        // Open menu
+        // ----------------------------------------
 
         function openMenu() {
-          mobileMenu.classList.add("open");
-          hamburgerBtn.classList.add("active");
+
+          mobileMenu.classList.remove("hidden");
+
+          hamburgerBtn.setAttribute("aria-expanded", "true");
+
           body.classList.add("menu-open");
+
+          // Animate hamburger → X
+          if (hamburgerLines.length >= 3) {
+
+            hamburgerLines[0].classList.add(
+              "rotate-45",
+              "translate-y-2"
+            );
+
+            hamburgerLines[1].classList.add(
+              "opacity-0"
+            );
+
+            hamburgerLines[2].classList.add(
+              "-rotate-45",
+              "-translate-y-2"
+            );
+          }
         }
+
+
+        // ----------------------------------------
+        // Close menu
+        // ----------------------------------------
 
         function closeMenu() {
-          mobileMenu.classList.remove("open");
-          hamburgerBtn.classList.remove("active");
+
+          mobileMenu.classList.add("hidden");
+
+          hamburgerBtn.setAttribute("aria-expanded", "false");
+
           body.classList.remove("menu-open");
+
+          // Reset hamburger
+          if (hamburgerLines.length >= 3) {
+
+            hamburgerLines[0].classList.remove(
+              "rotate-45",
+              "translate-y-2"
+            );
+
+            hamburgerLines[1].classList.remove(
+              "opacity-0"
+            );
+
+            hamburgerLines[2].classList.remove(
+              "-rotate-45",
+              "-translate-y-2"
+            );
+          }
         }
 
-        // Toggle on hamburger click
+
+        // ----------------------------------------
+        // Hamburger click
+        // ----------------------------------------
+
         hamburgerBtn.addEventListener("click", function (e) {
+
+          e.preventDefault();
           e.stopPropagation();
-          if (mobileMenu.classList.contains("open")) {
+
+          const isOpen =
+            !mobileMenu.classList.contains("hidden");
+
+          if (isOpen) {
             closeMenu();
           } else {
             openMenu();
           }
+
         });
 
-        // Close on close button click
-        closeBtn.addEventListener("click", closeMenu);
 
-        // Close on link click (smooth scroll)
-        mobileLinks.forEach((link) => {
+        // ----------------------------------------
+        // Mobile navigation links
+        // ----------------------------------------
+
+        mobileLinks.forEach(function (link) {
+
           link.addEventListener("click", function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute("href");
-            const targetElement = document.querySelector(targetId);
 
-            if (targetElement) {
-              closeMenu();
-              setTimeout(() => {
-                const navHeight = navbar.offsetHeight;
-                const targetPosition =
-                  targetElement.getBoundingClientRect().top +
-                  window.pageYOffset -
-                  navHeight;
-                window.scrollTo({
-                  top: targetPosition,
-                  behavior: "smooth",
-                });
-              }, 400);
-            }
-          });
-        });
-
-        // Close on outside click (backdrop)
-        mobileMenu.addEventListener("click", function (e) {
-          if (e.target === this) {
-            closeMenu();
-          }
-        });
-
-        // Close on Escape key
-        document.addEventListener("keydown", function (e) {
-          if (e.key === "Escape" && mobileMenu.classList.contains("open")) {
-            closeMenu();
-          }
-        });
-
-        // ===== DESKTOP NAVIGATION SMOOTH SCROLL =====
-        document.querySelectorAll(".nav-links li a").forEach((link) => {
-          link.addEventListener("click", function (e) {
             const href = this.getAttribute("href");
-            if (href && href.startsWith("#")) {
-              e.preventDefault();
-              const target = document.querySelector(href);
-              if (target) {
-                const navHeight = navbar.offsetHeight;
-                const targetPosition =
-                  target.getBoundingClientRect().top +
-                  window.pageYOffset -
-                  navHeight;
-                window.scrollTo({
-                  top: targetPosition,
-                  behavior: "smooth",
-                });
-              }
+
+            if (!href || !href.startsWith("#")) {
+              return;
             }
-          });
-        });
 
-        // ===== CLOSE MENU ON RESIZE TO DESKTOP =====
-        let resizeTimer;
-        window.addEventListener("resize", function () {
-          clearTimeout(resizeTimer);
-          resizeTimer = setTimeout(() => {
-            if (
-              window.innerWidth >= 769 &&
-              mobileMenu.classList.contains("open")
-            ) {
-              closeMenu();
+            const targetElement =
+              document.querySelector(href);
+
+            if (!targetElement) {
+              return;
             }
-          }, 250);
-        });
 
-        // ===== ACTIVE NAV LINK HIGHLIGHT =====
-        const sections = document.querySelectorAll("section[id]");
-        const navLinks = document.querySelectorAll(
-          ".nav-links li a, .mobile-link",
-        );
+            e.preventDefault();
 
-        function highlightNavLink() {
-          const scrollPosition = window.scrollY + 150;
+            closeMenu();
 
-          sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
-            const sectionBottom = sectionTop + section.offsetHeight;
-            const sectionId = section.getAttribute("id");
+            setTimeout(function () {
 
-            if (
-              scrollPosition >= sectionTop &&
-              scrollPosition < sectionBottom
-            ) {
-              navLinks.forEach((link) => {
-                link.style.color = "";
-                if (link.getAttribute("href") === `#${sectionId}`) {
-                  link.style.color = "#ffffff";
-                }
+              const navHeight =
+                navbar.offsetHeight;
+
+              const targetPosition =
+                targetElement.getBoundingClientRect().top +
+                window.pageYOffset -
+                navHeight -
+                10;
+
+              window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth"
               });
-            }
+
+            }, 150);
+
           });
-        }
 
-        window.addEventListener("scroll", highlightNavLink);
-        highlightNavLink();
-      });
+        });
 
-      document
-        .getElementById("distributor-form")
-        .addEventListener("submit", function (e) {
+
+        // ----------------------------------------
+        // Close menu when clicking outside
+        // ----------------------------------------
+
+        document.addEventListener("click", function (e) {
+
+          if (
+            !mobileMenu.classList.contains("hidden") &&
+            !navbar.contains(e.target) &&
+            !mobileMenu.contains(e.target)
+          ) {
+            closeMenu();
+          }
+
+        });
+
+
+        // ----------------------------------------
+        // Escape key
+        // ----------------------------------------
+
+        document.addEventListener("keydown", function (e) {
+
+          if (
+            e.key === "Escape" &&
+            !mobileMenu.classList.contains("hidden")
+          ) {
+            closeMenu();
+          }
+
+        });
+
+
+        // ----------------------------------------
+        // Close menu after resize
+        // ----------------------------------------
+
+        window.addEventListener("resize", function () {
+
+          if (window.innerWidth >= 768) {
+            closeMenu();
+          }
+
+        });
+
+      }
+
+
+      // ==========================================
+      // DESKTOP NAVIGATION
+      // ==========================================
+
+      desktopLinks.forEach(function (link) {
+
+        link.addEventListener("click", function (e) {
+
+          const href =
+            this.getAttribute("href");
+
+          if (!href || !href.startsWith("#")) {
+            return;
+          }
+
+          const target =
+            document.querySelector(href);
+
+          if (!target) {
+            return;
+          }
+
           e.preventDefault();
 
-          const name = this.full_name.value.trim();
-          const email = this.email.value.trim();
-          const company = this.company.value.trim();
+          const navHeight =
+            navbar.offsetHeight;
 
-          const message = `*New Distributor Application*
+          const targetPosition =
+            target.getBoundingClientRect().top +
+            window.pageYOffset -
+            navHeight -
+            10;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth"
+          });
+
+        });
+
+      });
+
+
+      // ==========================================
+      // ACTIVE NAV LINK
+      // ==========================================
+
+      const sections =
+        document.querySelectorAll("section[id]");
+
+      const allNavLinks =
+        document.querySelectorAll(
+          ".nav-links a, .mobile-link"
+        );
+
+
+      function highlightNavLink() {
+
+        const scrollPosition =
+          window.scrollY + 150;
+
+        sections.forEach(function (section) {
+
+          const sectionTop =
+            section.offsetTop;
+
+          const sectionBottom =
+            sectionTop +
+            section.offsetHeight;
+
+          const sectionId =
+            section.getAttribute("id");
+
+
+          if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionBottom
+          ) {
+
+            allNavLinks.forEach(function (link) {
+
+              link.classList.remove(
+                "text-white"
+              );
+
+              link.classList.add(
+                "text-gray-300"
+              );
+
+              if (
+                link.getAttribute("href") ===
+                "#" + sectionId
+              ) {
+
+                link.classList.remove(
+                  "text-gray-300"
+                );
+
+                link.classList.add(
+                  "text-white"
+                );
+
+              }
+
+            });
+
+          }
+
+        });
+
+      }
+
+      window.addEventListener(
+        "scroll",
+        highlightNavLink
+      );
+
+      highlightNavLink();
+
+    });
+
+    document
+      .getElementById("distributor-form")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = this.full_name.value.trim();
+        const email = this.email.value.trim();
+        const company = this.company.value.trim();
+
+        const message = `*New Distributor Application*
 
 Full Name: ${name}
 
@@ -1935,27 +1712,27 @@ Email Address: ${email}
 Company Name: ${company}
 
 Submitted via the FAST TRACK website.`;
-          // Replace with your WhatsApp number
-          const phone = "919876543210";
+        // Replace with your WhatsApp number
+        const phone = "919876543210";
 
-          const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-          window.open(whatsappURL, "_blank");
-        });
+        window.open(whatsappURL, "_blank");
+      });
 
-      //careers form
-      document
-        .getElementById("careers-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
+    //careers form
+    document
+      .getElementById("careers-form")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
 
-          const fullName = this.full_name.value.trim();
-          const email = this.email.value.trim();
-          const role = this.role.value.trim();
+        const fullName = this.full_name.value.trim();
+        const email = this.email.value.trim();
+        const role = this.role.value.trim();
 
-          const phone = "919876543210"; // Replace with your WhatsApp number
+        const phone = "919876543210"; // Replace with your WhatsApp number
 
-          const message = `*Career Application*
+        const message = `*Career Application*
 
 Name: ${fullName}
 
@@ -1964,90 +1741,156 @@ Email: ${email}
 Position Applied For: ${role}
 
 Submitted via the FAST TRACK website.`;
-          const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-          window.open(whatsappURL, "_blank");
-        });
+        window.open(whatsappURL, "_blank");
+      });
 
-      // State quantity and selected pack
-      let selectedPack = 12;
-      let quantity = 1;
+    // State quantity and selected pack
+    let selectedPack = 12;
+    let quantity = 1;
 
-      // Open Overlay
-      function openBulkOrder() {
-        const overlay = document.getElementById("bulkOrderOverlay");
-        overlay.classList.add("active");
-        document.body.style.overflow = "hidden";
+    // Open Overlay
+    function openBulkOrder() {
+      const overlay = document.getElementById("bulkOrderOverlay");
+      overlay.classList.add("active");
+      document.body.style.overflow = "hidden";
 
-        // Reset to defaults
-        selectedPack = 12;
-        quantity = 1;
-        updateUI();
+      // Reset to defaults
+      selectedPack = 12;
+      quantity = 1;
+      updateUI();
 
-        // Highlight default pack
-        document.querySelectorAll(".pack-btn").forEach((btn) => {
-          btn.classList.remove("active");
-          if (parseInt(btn.dataset.pack) === 12) {
-            btn.classList.add("active");
-          }
-        });
-      }
-
-      // Close Overlay
-      function closeBulkOrder() {
-        const overlay = document.getElementById("bulkOrderOverlay");
-        overlay.classList.remove("active");
-        document.body.style.overflow = "";
-      }
-
-      // Select Pack
-      function selectPack(pack) {
-        selectedPack = pack;
-
-        // Update active state
-        document.querySelectorAll(".pack-btn").forEach((btn) => {
-          btn.classList.remove("active");
-          if (parseInt(btn.dataset.pack) === pack) {
-            btn.classList.add("active");
-          }
-        });
-
-        updateUI();
-      }
-
-      // Update Quantity
-      function updateQuantity(delta) {
-        quantity = Math.max(1, quantity + delta);
-        updateUI();
-      }
-
-      // Update UI
-      function updateUI() {
-        const totalCans = selectedPack * quantity;
-
-        document.getElementById("quantityDisplay").textContent = quantity;
-        document.getElementById("selectedPackDisplay").textContent =
-          `${selectedPack} Pack`;
-        document.getElementById("selectedQuantityDisplay").textContent =
-          `× ${quantity}`;
-        document.getElementById("totalCansDisplay").textContent = totalCans;
-      }
-
-      // Continue Order
-      function continueOrder() {
-        const totalCans = selectedPack * quantity;
-        alert(
-          `Order placed!\n\n${selectedPack} Pack × ${quantity}\nTotal: ${totalCans} cans`,
-        );
-        closeBulkOrder();
-      }
-
-      // Close on Escape key
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-          closeBulkOrder();
+      // Highlight default pack
+      document.querySelectorAll(".pack-btn").forEach((btn) => {
+        btn.classList.remove("active");
+        if (parseInt(btn.dataset.pack) === 12) {
+          btn.classList.add("active");
         }
       });
-    </script>
-  </body>
+    }
+
+    // Close Overlay
+    function closeBulkOrder() {
+      const overlay = document.getElementById("bulkOrderOverlay");
+      overlay.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+
+    // Select Pack
+    function selectPack(pack) {
+      selectedPack = pack;
+
+      // Update active state
+      document.querySelectorAll(".pack-btn").forEach((btn) => {
+        btn.classList.remove("active");
+        if (parseInt(btn.dataset.pack) === pack) {
+          btn.classList.add("active");
+        }
+      });
+
+      updateUI();
+    }
+
+    // Update Quantity
+    function updateQuantity(delta) {
+      quantity = Math.max(1, quantity + delta);
+      updateUI();
+    }
+
+    // Update UI
+    function updateUI() {
+      const totalCans = selectedPack * quantity;
+
+      document.getElementById("quantityDisplay").textContent = quantity;
+      document.getElementById("selectedPackDisplay").textContent =
+        `${selectedPack} Pack`;
+      document.getElementById("selectedQuantityDisplay").textContent =
+        `× ${quantity}`;
+      document.getElementById("totalCansDisplay").textContent = totalCans;
+    }
+
+    // Continue Order
+    function continueOrder() {
+      const totalCans = selectedPack * quantity;
+      alert(
+        `Order placed!\n\n${selectedPack} Pack × ${quantity}\nTotal: ${totalCans} cans`,
+      );
+      closeBulkOrder();
+    }
+
+    // Close on Escape key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closeBulkOrder();
+      }
+    });
+
+  // Modal Functions
+  function openModal(type) {
+    const modalMap = {
+      'privacy': 'privacyModal',
+      'terms': 'termsModal',
+      'cookies': 'cookiesModal'
+    };
+    
+    const modalId = modalMap[type];
+    if (!modalId) return;
+    
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+      
+      // Trigger animation
+      setTimeout(() => {
+        modal.style.opacity = '1';
+      }, 10);
+    }
+  }
+
+  function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.opacity = '0';
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = ''; // Restore scrolling
+      }, 300);
+    }
+  }
+
+  function closeModalOutside(event, modalId) {
+    if (event.target === event.currentTarget) {
+      closeModal(modalId);
+    }
+  }
+
+  // Close modals with Escape key
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      ['privacyModal', 'termsModal', 'cookiesModal'].forEach(id => {
+        const modal = document.getElementById(id);
+        if (modal && !modal.classList.contains('hidden')) {
+          closeModal(id);
+        }
+      });
+    }
+  });
+
+  // Initialize modals with opacity 0 for smooth transitions
+  document.addEventListener('DOMContentLoaded', function() {
+    ['privacyModal', 'termsModal', 'cookiesModal'].forEach(id => {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.style.opacity = '0';
+        modal.style.transition = 'opacity 0.3s ease';
+      }
+    });
+  });
+
+
+  </script>
+</body>
+
 </html>
